@@ -1,0 +1,151 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(5, 4, 52, 0.993);
+    transition: 0.5s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:#00abf0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.skill {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(5, 4, 52, 0.993);
+    border-radius: 8px;
+}
+
+.skill h2 {
+    color: #eeeded;
+}
+
+.skill p {
+    color: #fcd602;
+}
+.skill-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.skill-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #05ff0d; 
+    transition: width 2s ease; 
+}
+.html::before { width: 90%; }
+.css::before { width: 85%; }
+.c::before { width: 67%; }
+.python::before { width: 71%; }
+.a1{
+    color: #00abf0;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+input{
+    border-radius: 8px;
+}
+textarea{
+    border-radius: 6px;
+    height: 40px;
+    width: 40%;
+}
+.a1:hover{
+    background-color: rgba(5, 4, 52, 0.993);
+    color: #ddd;
+    transition: 1s;
+}
+.t1{
+    color:  rgba(5, 4, 52, 0.993);
+    transition: 0.5s;
+}
+.t1:hover{
+    color:  rgba(240, 240, 243, 0.993);
+    transition: 0.5s;
+}
+.k1{
+    color: #ddd;
+    transition: 0.8s;
+    margin: 0;
+}
+.k1:hover{
+    color:rgba(5, 4, 52, 0.993) ;
+    transition: 0.8s;
+}
+form.fa fa-check-circle{
+position: absolute;
+right: 10px;
+}
+.container .error .input{
+ border-color:red ;
+}
+.s2{
+    background-color:  rgba(219, 219, 234, 0.993);;
+    padding: 5px 9px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(223, 221, 221);
+    display: inline-block;
+    margin: 30px 1;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: 1s;
+    font-family: 'poppins',sans-serif;
+}
+.s2:hover{
+    background-color: rgba(250, 214, 10, 0.993);
+    color: #eaf1f4
+}
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+h1:hover{
+    color: rgb(120, 255, 47);
+    transition: 1.2s;
+}
+.c1{
+    border: 1px solid rgb(255, 255, 255);
+    height: 150px;
+    width: 150px;
+    border-radius:100px ;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+    border-radius:100px ;
+}
+.home__social {
+    display: flex;
+    flex-direction: column;
+  }
+  .home__social-icon {
+    width: max-content;
+    margin-bottom: var(--mb-2);
+    font-size: 1.5rem;
+    color: var(--second-color);
+  }
+  .home__social-icon:hover {
+    color: var(--first-color);
+  }
