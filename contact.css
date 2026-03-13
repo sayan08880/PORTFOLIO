@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(5, 4, 52, 0.993);
+    transition: 0.5s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:#00abf0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+.k1{
+    transition: 1.2s;
+}
+.k1:hover{
+    color: rgb(170, 255, 0);
+    transition: 1.2s;
+}
+button.a1{
+    background-color:rgb(255, 255, 255);
+    padding: 5px 9px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 1;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: 1s;
+    font-family: 'poppins',sans-serif;
+    color: #000000;
+    transition: 0.5s;
+}
+button.a1:hover{
+    background-color: rgba(5, 4, 52, 0.993);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+button{
+    background-color:rgb(255, 255, 255);
+    padding: 5px 9px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 30px 1;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: 1s;
+    font-family: 'poppins',sans-serif;
+    color: #ffffff;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(239, 216, 8);
+    color: black;
+    transition: 0.5s;
+}
+.fa{
+    position: absolute;
+    right: 0.1px;
+    margin-right: 686px;
+    margin-top: -20px;
+}
