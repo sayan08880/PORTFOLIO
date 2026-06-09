@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #050433 0%, #0f0f4d 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-page {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.k1 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg, #00d4ff, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 16px;
+    padding: 35px 40px;
+    width: 320px;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    background: rgba(0, 212, 255, 0.15);
+    border-color: #00d4ff;
+    box-shadow: 0 15px 30px rgba(0, 212, 255, 0.2);
+}
+
+.info-card i {
+    font-size: 2.8rem;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #00ffcc;
+}
+
+.info-card p {
+    font-size: 1.35rem;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.back-btn {
+    margin-top: 20px;
+}
+
+.s2 {
+    padding: 14px 40px;
+    font-size: 1.15rem;
+    background: transparent;
+    color: white;
+    border: 2px solid #00d4ff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.s2:hover {
+    background: #00d4ff;
+    color: #050433;
+    transform: scale(1.08);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .info-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .k1 {
+        font-size: 2.4rem;
+    }
+}

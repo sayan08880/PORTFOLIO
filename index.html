@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <link rel="icon" type="image/jpeg" href="logo.png">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="header">
+    <a href="https://www.linkedin.com/in/sayan-mahalanabish-4278571b6/" class="logo">SAYAN</a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="project.html">PROJECTS</a>
+      <a href="skill.html">SKILLS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <section class="home">
+    <!-- Left: Text Content -->
+    <div class="home-contant">
+      <h1>Hi, I'm Sayan</h1><br><br>
+      <h3>TECHNICAL EXPLORER</h3>
+      <p>PASSIONATE ABOUT WEB DEVELOPMENT, CYBERSECURITY, AND BUILDING REAL-WORLD SOLUTIONS THROUGH CODE</p><br><br>
+      <div class="btn-box">
+        <button onclick="myFunction()" class="modern-btn">
+          <span>VIEW DETAILS</span>
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: Profile Image (sibling to home-contant, NOT inside it) -->
+    <div class="img">
+      <img src="sayan.jpg" class="profile-hero" alt="Sayan Profile">
+    </div>
+  </section>
+
+  <script>
+    function myFunction() {
+      window.open("cv.html", "_blank");
+    }
+    function toggleMenu() {
+      document.getElementById('navbar').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

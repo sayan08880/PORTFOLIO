@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgba(5, 4, 52, 0.993);
+            color: aliceblue;
+        }
+
+        /* ===== PROJECTS SECTION ===== */
+        .projects {
+            padding: 120px 10% 100px;
+            min-height: 100vh;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-heading h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: aliceblue;
+        }
+
+        .section-heading h2 span {
+            color: #00abf0;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Project Card */
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0, 171, 240, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 171, 240, 0.2);
+            border-color: #00abf0;
+        }
+
+        /* Project Image */
+        .project-img-container {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-img {
+            transform: scale(1.08);
+        }
+
+        /* Project Info */
+        .project-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .project-info h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: aliceblue;
+        }
+
+        .project-info p {
+            font-size: 15.5px;
+            line-height: 1.6;
+            color: rgb(200, 200, 230);
+            margin-bottom: 22px;
+        }
+
+        /* GitHub Logo */
+        .github-link {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .github-link:hover {
+            transform: scale(1.25) rotate(12deg);
+        }
+
+        .github-logo {
+            width: 50px;
+            height: 50px;
+            filter: brightness(0.9);
+            transition: all 0.3s ease;
+        }
+
+        .github-link:hover .github-logo {
+            filter: brightness(1.3) drop-shadow(0 0 12px #00abf0);
+        }
+
+        /* ===== CENTERED BACK BUTTON ===== */
+        .back-btn-container {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .s2 {
+            padding: 14px 40px;
+            font-size: 1.15rem;
+            background: transparent;
+            color: white;
+            border: 2px solid #00d4ff;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .s2:hover {
+            background: #00d4ff;
+            color: #050433;
+            transform: scale(1.08);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .projects {
+                padding: 100px 6% 80px;
+            }
+            .section-heading h2 {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects {
+                padding: 90px 5% 70px;
+            }
+            .project-img-container {
+                height: 200px;
+            }
+            .project-info h3 {
+                font-size: 21px;
+            }
+            .s2 {
+                padding: 12px 32px;
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <div class="section-heading">
+            <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-container">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="P1.png" 
+                         alt="Project 1" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>WEATHER & WORLD CLOCK WEB APP</h3>
+                    <p>A Vanilla JavaScript web app that shows live weather, sunrise/sunset, and world clock using APIs and real-time data.</p>
+                    <a href="https://sayan08880.github.io/World-Weather/" target="_blank" class="github-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968898.png" 
+                             alt="GitHub" class="github-logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="P3.png" 
+                         alt="Project 2" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>HULK AI TERMINAL CHATBOT</h3>
+                    <p>A Python terminal chatbot using Groq API with LLaMA 3.3 70B for styled AI responses.</p>
+                    <a href="https://github.com/sayan08880/AICHATBOT" target="_blank" class="github-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968898.png" 
+                             alt="GitHub" class="github-logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="P2.png" 
+                         alt="Project 3" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>HULK SEND LOCAL FILE SHARING SERVER</h3>
+                    <p>A local file sharing server using Python that transfers files over Wi-Fi via QR scan—no internet or apps needed.</p>
+                    <a href="https://github.com/sayan08880/FILE-SEND" target="_blank" class="github-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968898.png" 
+                             alt="GitHub" class="github-logo">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Centered Back Button -->
+        <div class="back-btn-container">
+            <a href="index.html">
+                <button class="s2">
+                    Back to Home
+                </button>
+            </a>
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(5, 4, 52, 0.993);
+    color: aliceblue;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: cursive;
+    transition: 0.95s;
+}
+
+.logo:hover {
+    color: rgb(236, 236, 0);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: rgb(236, 241, 246);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+/* ===== HOME SECTION ===== */
+/* Key fix: flexbox row with space-between keeps text left, image right on ALL screen sizes */
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10% 60px;
+    gap: 40px;
+}
+
+.home-contant {
+    flex: 1;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.home-contant h1 {
+    font-size: 50px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.home-contant h1:hover {
+    color: #00abf0;
+    transition: 0.5s;
+}
+
+.home-contant h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00abf0;
+}
+
+.home-contant p {
+    font-size: 20px;
+}
+
+/* ===== BUTTON ===== */
+.btn-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.modern-btn {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: white;
+    padding: 16px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modern-btn:hover {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.6);
+    letter-spacing: 2px;
+}
+
+.modern-btn:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+.modern-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transform: skewX(-25deg);
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+.modern-btn:hover::before {
+    left: 150%;
+    opacity: 1;
+    transition: 0.7s;
+}
+
+/* ===== PROFILE IMAGE (RIGHT SIDE) ===== */
+/* Fixed: no more absolute positioning — image is a flex child, always stays right & centered */
+.img {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-hero {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 8px solid #00abf0;
+    box-shadow: 0 0 35px rgba(0, 171, 240, 0.7);
+    object-fit: cover;
+    transition: transform 0.5s;
+    display: block;
+}
+
+.profile-hero:hover {
+    transform: scale(1.08);
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #00abf0;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== TABLET (max 900px) ===== */
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 220px;
+        height: 100vh;
+        background: rgba(5, 4, 52, 0.98);
+        backdrop-filter: blur(20px);
+        padding: 80px 30px 30px;
+        gap: 28px;
+        z-index: 150;
+        border-left: 1px solid rgba(0, 171, 240, 0.2);
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar.open {
+        display: flex;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    /* Stack vertically on tablet/mobile */
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 100px 6% 60px;
+        gap: 40px;
+    }
+
+    .home-contant {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .home-contant h1 {
+        font-size: 36px;
+    }
+
+    .home-contant h3 {
+        font-size: 22px;
+    }
+
+    .home-contant p {
+        font-size: 15px;
+    }
+
+    .btn-box {
+        justify-content: center;
+    }
+
+    .img {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .profile-hero {
+        width: 220px;
+        height: 220px;
+        border-width: 5px;
+    }
+}
+
+/* ===== MOBILE (max 480px) ===== */
+@media (max-width: 480px) {
+    header {
+        padding: 16px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .home-contant h1 {
+        font-size: 28px;
+    }
+
+    .home-contant h3 {
+        font-size: 18px;
+    }
+
+    .home-contant p {
+        font-size: 13px;
+    }
+
+    .profile-hero {
+        width: 180px;
+        height: 180px;
+    }
+
+    .modern-btn {
+        padding: 12px 28px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS</title>
+    <link rel="icon" type="image/jpeg" href="logo.png">
+    <style>
+        /* ====================== INLINE CSS - ADVANCED SKILLS PAGE ====================== */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #050433 0%, #1a1a5e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 30px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 950px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 60px;
+            background: linear-gradient(90deg, #00d4ff, #00ff88);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 70px;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 16px;
+            padding: 30px 25px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-15px);
+            background: rgba(0, 212, 255, 0.15);
+            border-color: #00d4ff;
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.25);
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #00d4ff, #00ff88);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .skill-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .skill-title {
+            font-size: 1.65rem;
+            margin-bottom: 25px;
+            color: #00ffcc;
+            font-weight: 600;
+        }
+
+        .skill-bar-container {
+            height: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #00ff88);
+            border-radius: 20px;
+            transition: width 2.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            position: relative;
+        }
+
+        .skill-bar::after {
+            content: attr(data-percent);
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .back-btn {
+            margin-top: 30px;
+        }
+
+        .s2 {
+            padding: 14px 40px;
+            font-size: 1.2rem;
+            background: transparent;
+            color: white;
+            border: 2px solid #00d4ff;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .s2:hover {
+            background: #00d4ff;
+            color: #050433;
+            transform: scale(1.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 2.6rem;
+                margin-bottom: 40px;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MY SKILLS</h1>
+        
+        <div class="skills-grid">
+            <!-- HTML -->
+            <div class="skill-card">
+                <div class="skill-title">HTML</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="95%" style="width: 95%;"></div>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card">
+                <div class="skill-title">CSS</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="90%" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card">
+                <div class="skill-title">Python</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="88%" style="width: 88%;"></div>
+                </div>
+            </div>
+
+            <!-- C Programming -->
+            <div class="skill-card">
+                <div class="skill-title">C Programming</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="85%" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <!-- MS Office -->
+            <div class="skill-card">
+                <div class="skill-title">PHP</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="62%" style="width: 92%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-title">java</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="58%" style="width: 92%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-title">NETWORKING</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="75%" style="width: 92%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-title">UNIX</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="92%" style="width: 92%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-title">IOT</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="95%" style="width: 92%;"></div>
+                </div>
+            </div>
+        </div>
+
+       <div class="back-btn">
+            <a href="index.html">
+                <button class="s2">
+                    <i class="fa fa-arrow-left"></i> Back to Home
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Advanced skill bar animation (works even with inline CSS)
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillBars = document.querySelectorAll(".skill-bar");
+
+            const animateSkills = () => {
+                skillBars.forEach(bar => {
+                    const targetWidth = bar.style.width;
+                    bar.style.transition = "width 2.5s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    bar.style.width = targetWidth;
+                });
+            };
+
+            // Trigger animation when page loads
+            setTimeout(animateSkills, 800);
+        });
+    </script>
+</body>
+</html>

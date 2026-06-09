@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="icon" type="image/jpeg" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #0a0a0a;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .section-title {
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(to right, #3b82f6, #60a5fa, #93c5fd);
+            border-radius: 9999px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .section-title:hover::after {
+            width: 100px;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: #1f2937;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(to right, #3b82f6, #60a5fa, #93c5fd);
+            transition: width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .card {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #60a5fa;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .print-button {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .print-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 20px 25px -5px rgb(59 130 246 / 0.3), 
+                        0 8px 10px -6px rgb(59 130 246 / 0.3);
+        }
+        
+        .profile-img {
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.08) rotate(3deg);
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-gray-200 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-black/80 backdrop-blur-xl border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg">SM</div>
+                <div>
+                    <h1 class="text-2xl font-semibold heading-font tracking-tight">Sayan Mahalanabish</h1>
+                    <p class="text-xs text-blue-400 -mt-1">Technical Expert</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="contact.html" class="nav-link text-sm font-medium hover:text-white flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+                <button onclick="window.print()"
+                        class="print-button px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold rounded-2xl flex items-center gap-2 shadow-xl">
+                    <i class="fas fa-print"></i>
+                    <span>Print / Save as PDF</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4">
+        <!-- Hero Header -->
+        <header class="hero-bg text-white py-20 px-8 md:px-12 rounded-3xl mt-8 shadow-2xl relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(at_top_right,#4f46e510_0%,transparent_50%)]"></div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12 relative z-10">
+                <!-- Profile Image -->
+                <div class="w-52 h-52 md:w-64 md:h-64 rounded-3xl overflow-hidden border-4 border-white/30 shadow-2xl flex-shrink-0 profile-img">
+                    <img src="sayan.jpg" alt="Sayan Mahalanabish" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Intro -->
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-6xl md:text-7xl font-bold heading-font tracking-tighter mb-3">Sayan Mahalanabish</h1>
+                    <p class="text-3xl text-blue-300 mb-8">BCA Student • Technical Expert</p>
+                    
+                    <div class="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-4 text-base">
+                        <a href="tel:+916290688153" class="flex items-center gap-3 hover:text-blue-300 transition-colors">
+                            <i class="fas fa-phone"></i>
+                            +91 6290688153
+                        </a>
+                        <a href="mailto:dasguptasayan.080@gmail.com" class="flex items-center gap-3 hover:text-blue-300 transition-colors">
+                            <i class="fas fa-envelope"></i>
+                            dasguptasayan.080@gmail.com
+                        </a>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Barasat, Kolkata, West Bengal
+                        </div>
+                    </div>
+
+                    <div class="mt-12 flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#skills" 
+                           class="px-8 py-4 bg-white text-black font-semibold rounded-3xl hover:bg-blue-400 hover:text-white transition-all duration-300 flex items-center gap-3 shadow-lg">
+                            <i class="fas fa-code"></i>
+                            Explore Skills
+                        </a>
+                        <a href="#education" 
+                           class="px-8 py-4 border border-white/40 hover:border-white font-medium rounded-3xl transition-all duration-300 flex items-center gap-3">
+                            <i class="fas fa-graduation-cap"></i>
+                            My Journey
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Profile Section -->
+        <div class="glass -mt-6 mx-4 rounded-3xl p-10 shadow-2xl">
+            <h2 class="section-title text-4xl font-semibold heading-font mb-6 inline-block">Profile</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                Dedicated and technically skilled BCA fresher from MAKAUT. Expert in MS Word with strong foundation in programming and web development. Passionate about learning new technologies and contributing to meaningful projects.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-12 gap-8 max-w-5xl mx-auto py-16">
+            
+            <!-- Left Column -->
+            <div class="md:col-span-5 space-y-10">
+                <!-- Technical Skills -->
+                <div>
+                    <h2 id="skills" class="section-title text-3xl font-semibold mb-8 flex items-center gap-4">
+                        <i class="fas fa-laptop-code text-blue-400"></i>
+                        Technical Skills
+                    </h2>
+                    <div class="glass rounded-3xl p-8 space-y-8">
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">Python</span>
+                                <span class="text-blue-400">Beginner</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress w-[70%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">C Programming</span>
+                                <span class="text-blue-400">Beginner</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress w-[65%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">HTML, CSS, JavaScript</span>
+                                <span class="text-blue-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress w-[75%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">PHP</span>
+                                <span class="text-emerald-400">Beginner</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress w-[65%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">UNIX</span>
+                                <span class="text-blue-400">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress w-[75%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">Java Web Development</span>
+                                <span class="text-blue-400">Basic</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress w-[50%]"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h2 class="section-title text-3xl font-semibold mb-8 flex items-center gap-4">
+                        <i class="fas fa-language text-blue-400"></i>
+                        Languages
+                    </h2>
+                    <div class="glass rounded-3xl p-8 space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl">Bengali</span>
+                            <span class="px-5 py-1 bg-emerald-500/20 text-emerald-400 rounded-2xl text-sm font-medium">Fluent</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl">Hindi</span>
+                            <span class="px-5 py-1 bg-emerald-500/20 text-emerald-400 rounded-2xl text-sm font-medium">Fluent</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl">English</span>
+                            <span class="px-5 py-1 bg-amber-500/20 text-amber-400 rounded-2xl text-sm font-medium">Basic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="md:col-span-7 space-y-10">
+                <!-- Projects -->
+<div>
+    <h2 class="section-title text-3xl font-semibold mb-8 flex items-center justify-between">
+        <span>Projects</span>
+        <a href="https://github.com/sayan08880" 
+           target="_blank"
+           class="text-sm font-medium text-blue-400 hover:text-blue-300 flex items-center gap-2">
+            <i class="fab fa-github"></i>
+            View All on GitHub →
+        </a>
+    </h2>
+    
+    <div class="space-y-8">
+        
+        <!-- Programming / Technical Projects -->
+        <div class="card glass p-8 rounded-3xl">
+            <h3 class="text-2xl font-semibold mb-2">Programming Projects</h3>
+            <p class="text-blue-400 mb-5">Python, Java &amp; Backend Development</p>
+            <ul class="space-y-3 text-gray-300 text-[15px]">
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>AICHATBOT</strong> — Intelligent AI Chatbot in Python</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>FILE-SEND</strong> — File sharing utility</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>BACIS-GAME</strong> — Basic game development in Python</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>ENCODING-DECODING </strong> — Encryption/Decryption tool</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>MOBILE-NUMBER-INFORMATION</strong> — Phone number lookup tool</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>PASSWORD</strong> — Secure password manager in Java</li>
+            </ul>
+        </div>
+
+        <!-- Web Development Projects -->
+        <div class="card glass p-8 rounded-3xl">
+            <h3 class="text-2xl font-semibold mb-2">Web Development Projects</h3>
+            <p class="text-blue-400 mb-5">HTML, CSS, JavaScript &amp; PHP</p>
+            <ul class="space-y-3 text-gray-300 text-[15px]">
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>World-Weather</strong> — Real-time weather web app</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>CHATBOT</strong> — Interactive JavaScript chatbot</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>CALCULATOR</strong> — Full-featured calculator using PHP</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>PORTFOLIO</strong> — Personal portfolio website (CSS focused)</li>
+                <li class="flex gap-3"><span class="text-blue-500 mt-1">•</span> <strong>NUMARIC-CODE-EDITOR</strong> — Online code editor template</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+                <!-- Education -->
+                <div id="education">
+                    <h2 class="section-title text-3xl font-semibold mb-8 flex items-center gap-4">
+                        <i class="fas fa-graduation-cap text-blue-400"></i>
+                        Education
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="card glass p-8 rounded-3xl flex gap-6">
+                            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-4xl font-bold flex-shrink-0">BCA</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-2xl font-semibold">Bachelor of Computer Applications</h3>
+                                        <p class="text-blue-400">Eminent College of Management &amp; Technology</p>
+                                    </div>
+                                    <span class="text-sm text-gray-400">2023 – 2027</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card glass p-8 rounded-3xl flex gap-6">
+                            <div class="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center text-4xl font-bold flex-shrink-0">HS</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-2xl font-semibold">Higher Secondary</h3>
+                                        <p class="text-blue-400">Barasat PCS Government High School</p>
+                                    </div>
+                                    <span class="text-sm text-gray-400">2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 border-t border-white/10">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="text-gray-400">© 2026 Sayan Mahalanabish • Passionate about Technology</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animate skill bars
+        function animateSkills() {
+            document.querySelectorAll('.skill-progress').forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        }
+
+        const skillsSection = document.getElementById('skills');
+        let animated = false;
+
+        window.addEventListener('scroll', () => {
+            if (!animated && skillsSection.getBoundingClientRect().top < window.innerHeight * 0.8) {
+                animateSkills();
+                animated = true;
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
