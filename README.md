@@ -618,43 +618,6 @@ Optimized for:
 
 
 
-### TECHNICAL EXPLORER • SOFTWARE DEVELOPER • OPEN SOURCE LEARNER
-
-
-
-Passionate about building real-world applications using programming, web development, Linux, and modern technologies.
-
-
-
-### Skills
-
-
-
-* Python
-
-* C Programming
-
-* JavaScript
-
-* HTML5
-
-* CSS3
-
-* PHP
-
-* SQL
-
-* DBMS
-
-* UNIX/Linux
-
-* IoT
-
-
-
----
-
-
 
 ## 🌐 Connect With Me
 
@@ -674,29 +637,6 @@ Portfolio: https://sayan080.netlify.app
 
 ---
 
-
-
-## ⭐ Support
-
-
-
-If you found this project useful:
-
-
-
-🌟 Star the Repository
-
-
-
-🍴 Fork the Repository
-
-
-
-📢 Share the Project
-
-
-
----
 
 
 
