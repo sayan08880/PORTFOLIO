@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECTS</title>
+  <link rel="icon" type="image/jpeg" href="logo.png">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(5, 4, 52, 0.993);
+    color: aliceblue;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ===== CONTENT ABOVE PARTICLES ===== */
+.projects,
+.section-heading,
+.projects-container,
+.project-card,
+.back-btn-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== PROJECTS SECTION ===== */
+.projects {
+    padding: 120px 10% 100px;
+    min-height: 100vh;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.section-heading h2 span {
+    color: #00abf0;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== PROJECT CARD ===== */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 171, 240, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 171, 240, 0.2);
+    border-color: #00abf0;
+}
+
+/* ===== PROJECT IMAGE ===== */
+.project-img-container {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.08);
+}
+
+/* ===== PROJECT INFO ===== */
+.project-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: aliceblue;
+}
+
+.project-info p {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: rgb(200, 200, 230);
+    margin-bottom: 22px;
+}
+
+/* ===== GITHUB LOGO ===== */
+.github-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.github-link:hover {
+    transform: scale(1.25) rotate(12deg);
+}
+
+.github-logo {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+.github-link:hover .github-logo {
+    filter: brightness(1.3) drop-shadow(0 0 12px #00abf0);
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.s2 {
+    padding: 14px 40px;
+    font-size: 1.15rem;
+    background: transparent;
+    color: white;
+    border: 2px solid #00d4ff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.s2:hover {
+    background: #00d4ff;
+    color: #050433;
+    transform: scale(1.08);
+}
+
+/* ===== FLOATING PARTICLES BACKGROUND ===== */
+.particles {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.dot {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 212, 255, 0.5);
+    animation: floatDot linear infinite;
+}
+
+@keyframes floatDot {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(-60px) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .projects {
+        padding: 100px 6% 80px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 90px 5% 70px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-img-container {
+        height: 200px;
+    }
+
+    .project-info h3 {
+        font-size: 21px;
+    }
+
+    .s2 {
+        padding: 12px 32px;
+        font-size: 1.05rem;
+    }
+}
+    </style>
+</head>
+<body>
+  <section class="projects" id="projects">
+    <div class="section-heading">
+      <h2>MY <span>PROJECTS</span></h2>
+    </div>
+
+    <div class="projects-container" id="projectsContainer"></div>
+
+    <div class="back-btn-container">
+      <a href="index.html"><button class="s2">Back to Home</button></a>
+    </div>
+    <div class="particles" id="particles"></div>
+  </section>
+
+  <script src="portfolio-data.js"></script>
+  <script src="portfolio-render.js"></script>
+</body>
+</html>

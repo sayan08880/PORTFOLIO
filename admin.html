@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO ADMIN</title>
+  <link rel="icon" type="image/jpeg" href="logo.png">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div id="loginView" class="login-card">
+    <h2>ADMIN LOGIN</h2>
+    <div class="field">
+      <label for="adminPassword">Password</label>
+      <input type="password" id="adminPassword" placeholder="Enter admin password">
+    </div>
+    <br>
+    <button class="btn btn-primary" id="loginBtn">Open Admin Panel</button>
+    <a class="btn btn-secondary" href="index.html">Back Home</a>
+    <div class="status" id="loginStatus"></div>
+  </div>
+
+  <main id="adminApp" class="admin-shell" hidden>
+    <div class="admin-top">
+      <div class="brand">
+        <h1>Portfolio Admin Panel</h1>
+        <p>Edit Home, About, Projects, Skills and full CV content from one place.</p>
+      </div>
+      <div class="top-actions">
+        <a class="btn btn-secondary" href="index.html">Home</a>
+        <a class="btn btn-secondary" href="project.html">Projects</a>
+        <a class="btn btn-secondary" href="skill.html">Skills</a>
+        <a class="btn btn-secondary" href="cv.html">CV</a>
+        <button class="btn btn-primary" id="saveBtn">Save Changes</button>
+      </div>
+    </div>
+
+    <section class="grid">
+      <div class="panel full">
+        <div class="panel-head"><div><h2>Site Settings</h2><p class="help">Logo text, name, image and social links.</p></div></div>
+        <div class="form-grid">
+          <div class="field"><label>Logo Text</label><input id="site_logoText"></div>
+          <div class="field"><label>Full Name</label><input id="site_fullName"></div>
+          <div class="field"><label>Profile Image Path</label><input id="site_profileImage" placeholder="sayan.jpg"></div>
+          <div class="field"><label>GitHub Link</label><input id="site_github"></div>
+          <div class="field"><label>LinkedIn Link</label><input id="site_linkedin"></div>
+          <div class="field"><label>Facebook Link</label><input id="site_facebook"></div>
+          <div class="field"><label>Instagram Link</label><input id="site_instagram"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><div><h2>Home Page</h2><p class="help">Change hero title and tagline.</p></div></div>
+        <div class="form-grid">
+          <div class="field full"><label>Greeting</label><input id="home_greeting"></div>
+          <div class="field full"><label>Main Title</label><input id="home_title"></div>
+          <div class="field full"><label>Tagline</label><textarea id="home_tagline"></textarea></div>
+          <div class="field"><label>Button Text</label><input id="home_buttonText"></div>
+          <div class="field"><label>Button Link</label><input id="home_buttonLink"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><div><h2>About Page</h2><p class="help">Update About Me text easily.</p></div></div>
+        <div class="form-grid">
+          <div class="field"><label>Heading</label><input id="about_heading"></div>
+          <div class="field"><label>Subtitle</label><input id="about_subtitle"></div>
+          <div class="field full"><label>About Text</label><textarea id="about_text"></textarea></div>
+        </div>
+      </div>
+
+      <div class="panel full">
+        <div class="panel-head"><div><h2>Projects Page</h2><p class="help">Add, edit or delete project cards.</p></div><button class="btn btn-primary btn-small" id="addProjectBtn">Add Project</button></div>
+        <div class="rows" id="projectRows"></div>
+      </div>
+
+      <div class="panel full">
+        <div class="panel-head"><div><h2>Skills Page</h2><p class="help">Add skills and percentage bars.</p></div><button class="btn btn-primary btn-small" id="addSkillBtn">Add Skill</button></div>
+        <div class="rows" id="skillRows"></div>
+      </div>
+
+      <div class="panel full">
+        <div class="panel-head"><div><h2>CV Main Details</h2><p class="help">Edit hero, contacts, profile summary.</p></div></div>
+        <div class="form-grid">
+          <div class="field"><label>Initials</label><input id="cv_navInitials"></div>
+          <div class="field"><label>Badge</label><input id="cv_badge"></div>
+          <div class="field"><label>CV Full Name</label><input id="cv_fullName"></div>
+          <div class="field"><label>Subtitle</label><input id="cv_subtitle"></div>
+          <div class="field"><label>Phone</label><input id="cv_phone"></div>
+          <div class="field"><label>Email</label><input id="cv_email"></div>
+          <div class="field"><label>Location</label><input id="cv_location"></div>
+          <div class="field"><label>Profile Tag</label><input id="cv_profileTag"></div>
+          <div class="field full"><label>Profile Heading</label><input id="cv_profileHeading"></div>
+          <div class="field full"><label>Profile Text</label><textarea id="cv_profileText"></textarea></div>
+        </div>
+      </div>
+
+      <div class="panel full">
+        <div class="panel-head"><div><h2>CV Skills</h2><p class="help">CV skill rows with icons, labels, levels and percentages.</p></div><button class="btn btn-primary btn-small" id="addCvSkillBtn">Add CV Skill</button></div>
+        <div class="rows" id="cvSkillRows"></div>
+      </div>
+
+      <div class="panel full">
+        <div class="panel-head"><div><h2>CV Project Groups</h2><p class="help">Grouped projects shown inside the CV page.</p></div><button class="btn btn-primary btn-small" id="addCvProjectBtn">Add CV Project Group</button></div>
+        <div class="rows" id="cvProjectRows"></div>
+      </div>
+
+      <div class="panel full">
+        <div class="panel-head"><div><h2>CV Education</h2><p class="help">Education rows.</p></div><button class="btn btn-primary btn-small" id="addEducationBtn">Add Education</button></div>
+        <div class="rows" id="educationRows"></div>
+      </div>
+
+      <div class="panel full">
+        <div class="panel-head"><div><h2>CV Languages</h2><p class="help">Language rows.</p></div><button class="btn btn-primary btn-small" id="addLanguageBtn">Add Language</button></div>
+        <div class="rows" id="languageRows"></div>
+      </div>
+
+      <div class="panel full json-box">
+        <div class="panel-head">
+          <div><h2>Backup / Advanced JSON Editor</h2><p class="help">Export, import, or manually edit the full data object.</p></div>
+          <div class="top-actions">
+            <button class="btn btn-secondary btn-small" id="refreshJsonBtn">Refresh JSON</button>
+            <button class="btn btn-secondary btn-small" id="applyJsonBtn">Apply JSON</button>
+            <button class="btn btn-primary btn-small" id="exportBtn">Export JSON</button>
+            <button class="btn btn-danger btn-small" id="resetBtn">Reset Defaults</button>
+          </div>
+        </div>
+        <textarea id="jsonEditor" spellcheck="false"></textarea>
+        <br><br>
+        <input type="file" id="importFile" accept="application/json">
+        <div class="status" id="status"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="particles" id="particles"></div>
+  <script src="portfolio-data.js"></script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

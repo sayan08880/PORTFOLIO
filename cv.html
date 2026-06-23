@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="icon" type="image/jpeg" href="logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        * { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+
+        .page-shell {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 28px 18px 60px;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.055);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(96, 165, 250, 0.18);
+            box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+        }
+
+        .top-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 10, 0.82);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(96, 165, 250, 0.16);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color .25s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            height: 2px;
+            width: 0;
+            background: #60a5fa;
+            transition: width .3s ease;
+        }
+
+        .nav-link:hover { color: #93c5fd; }
+        .nav-link:hover::after { width: 100%; }
+
+        .hero-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 34px;
+            padding: 54px 28px;
+            text-align: center;
+            animation: fadeUp .75s ease both;
+        }
+
+        .hero-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(59,130,246,.22), transparent 42%);
+            pointer-events: none;
+        }
+
+        .hero-content { position: relative; z-index: 2; }
+
+        .profile-photo-wrap {
+            width: 190px;
+            height: 190px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(135deg, #1d4ed8, #38bdf8, #2563eb);
+            box-shadow: 0 0 0 8px rgba(59,130,246,.10), 0 24px 70px rgba(37,99,235,.25);
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            border: 4px solid #0a0a0a;
+            transition: transform .35s ease, filter .35s ease;
+        }
+
+        .profile-photo-wrap:hover .profile-photo {
+            transform: scale(1.12);
+            filter: contrast(1.06) saturate(1.05);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 16px;
+            border-radius: 999px;
+            background: rgba(37, 99, 235, .14);
+            border: 1px solid rgba(96, 165, 250, .28);
+            color: #93c5fd;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-size: clamp(2.3rem, 7vw, 5rem);
+            font-weight: 900;
+            letter-spacing: -0.07em;
+            line-height: .95;
+            margin-top: 18px;
+        }
+
+        .hero-subtitle {
+            color: #93c5fd;
+            margin-top: 14px;
+            font-size: clamp(1.05rem, 3vw, 1.45rem);
+            font-weight: 700;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .contact-pill {
+            padding: 15px 16px;
+            border-radius: 20px;
+            background: rgba(255,255,255,.045);
+            border: 1px solid rgba(255,255,255,.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #dbeafe;
+            transition: transform .25s ease, border-color .25s ease, background .25s ease;
+            word-break: break-word;
+        }
+
+        .contact-pill:hover {
+            transform: translateY(-5px);
+            border-color: rgba(96,165,250,.55);
+            background: rgba(59,130,246,.12);
+        }
+
+        .action-row {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+
+        .btn-primary, .btn-secondary {
+            border-radius: 18px;
+            padding: 13px 22px;
+            font-weight: 800;
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+            box-shadow: 0 16px 36px rgba(37,99,235,.28);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,.06);
+            border: 1px solid rgba(255,255,255,.12);
+            color: #e5e7eb;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            transform: translateY(-4px);
+        }
+
+        .section {
+            margin-top: 28px;
+            border-radius: 28px;
+            padding: 30px;
+            opacity: 0;
+            transform: translateY(26px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-head {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin-bottom: 22px;
+        }
+
+        .section-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 16px;
+            display: grid;
+            place-items: center;
+            background: rgba(37,99,235,.18);
+            border: 1px solid rgba(96,165,250,.25);
+            color: #60a5fa;
+        }
+
+        .section-title {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 900;
+            letter-spacing: -0.04em;
+        }
+
+        .row-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .info-row {
+            display: grid;
+            grid-template-columns: 220px 1fr auto;
+            gap: 18px;
+            align-items: center;
+            padding: 18px;
+            border-radius: 22px;
+            background: rgba(255,255,255,.045);
+            border: 1px solid rgba(255,255,255,.075);
+            transition: transform .25s ease, border-color .25s ease, background .25s ease;
+        }
+
+        .info-row:hover {
+            transform: translateX(8px);
+            border-color: rgba(96,165,250,.45);
+            background: rgba(59,130,246,.08);
+        }
+
+        .row-label {
+            color: #93c5fd;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .row-main h3 {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: white;
+        }
+
+        .row-main p {
+            color: #aab4c3;
+            margin-top: 3px;
+            line-height: 1.55;
+        }
+
+        .row-tag {
+            white-space: nowrap;
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: rgba(37,99,235,.16);
+            color: #93c5fd;
+            font-size: 12px;
+            font-weight: 800;
+            border: 1px solid rgba(96,165,250,.2);
+        }
+
+        .skill-line {
+            height: 9px;
+            border-radius: 999px;
+            background: rgba(255,255,255,.1);
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .skill-fill {
+            height: 100%;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #1d4ed8, #38bdf8);
+            width: 0;
+            transition: width 1.2s cubic-bezier(.2,.9,.2,1);
+        }
+
+        .project-links {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 18px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 45px 16px 20px;
+            color: #7d8795;
+        }
+
+          /* ===== FLOATING PARTICLES ===== */
+.particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.dot {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 212, 255, 0.5);
+    animation: floatDot linear infinite;
+}
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 820px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .info-row { grid-template-columns: 1fr; align-items: start; }
+            .row-tag { width: fit-content; }
+            .top-nav .hide-mobile { display: none; }
+            .section { padding: 22px; }
+            .hero-card { padding: 42px 20px; }
+            .profile-photo-wrap { width: 165px; height: 165px; }
+        }
+
+        @media print {
+            .top-nav, .action-row { display: none !important; }
+            body { background: white; color: black; }
+            .glass, .section, .hero-card { box-shadow: none; border: 1px solid #ddd; background: white; color: black; }
+            .row-main h3, .hero-title { color: black; }
+        }
+    </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="max-w-[980px] mx-auto px-5 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div id="cvInitials" class="w-11 h-11 rounded-2xl bg-blue-600 grid place-items-center font-black text-white">SM</div>
+        <div>
+          <h1 id="cvTopName" class="font-black tracking-tight text-white">SAYAN MAHALANABISH</h1>
+          <p class="text-xs text-blue-300 font-semibold">CV</p>
+        </div>
+      </div>
+      <div class="hide-mobile flex items-center gap-7 text-sm font-bold text-gray-300">
+        <a class="nav-link" href="index.html">HOME</a>
+        <a class="nav-link" href="#profile">PROFILE</a>
+        <a class="nav-link" href="#skills">SKILLS</a>
+        <a class="nav-link" href="#projects">PROJECTS</a>
+        <a class="nav-link" href="#education">EDUCATION</a>
+        <a class="nav-link" href="admin.html">ADMIN</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <header class="hero-card glass">
+      <div class="hero-content">
+        <div class="profile-photo-wrap">
+          <img id="cvProfileImage" src="sayan.jpg" alt="Sayan Mahalanabish" class="profile-photo">
+        </div>
+        <span class="badge"><i class="fa-solid fa-code"></i> <span id="cvBadge">Technical Expert</span></span>
+        <h1 id="cvFullName" class="hero-title">Sayan
+Mahalanabish</h1>
+        <p id="cvSubtitle" class="hero-subtitle">Web Development • Programming • Real-World Projects</p>
+
+        <div class="contact-grid">
+          <a id="cvPhone" href="tel:+916290688153" class="contact-pill"><i class="fa-solid fa-phone text-blue-400"></i> +91 6290688153</a>
+          <a id="cvEmail" href="mailto:dasguptasayan.080@gmail.com" class="contact-pill"><i class="fa-solid fa-envelope text-blue-400"></i> dasguptasayan.080@gmail.com</a>
+          <div id="cvLocation" class="contact-pill"><i class="fa-solid fa-location-dot text-blue-400"></i> Barasat, Kolkata, West Bengal</div>
+        </div>
+
+        <div class="action-row">
+          <a href="#projects" class="btn-primary"><i class="fa-solid fa-laptop-code mr-2"></i>View Projects</a>
+          <button onclick="window.print()" class="btn-secondary"><i class="fa-solid fa-print mr-2"></i>Print / Save PDF</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="profile" class="section glass reveal">
+      <div class="section-head">
+        <div class="section-icon"><i class="fa-solid fa-user"></i></div>
+        <h2 class="section-title">Profile</h2>
+      </div>
+      <div class="info-row">
+        <div class="row-label"><i class="fa-solid fa-bolt"></i> Summary</div>
+        <div class="row-main">
+          <h3 id="cvProfileHeading">Technically skilled developer focused on practical applications</h3>
+          <p id="cvProfileText">Dedicated developer with a strong foundation in programming and web development.</p>
+        </div>
+        <span id="cvProfileTag" class="row-tag">Developer</span>
+      </div>
+    </section>
+
+    <section id="skills" class="section glass reveal">
+      <div class="section-head">
+        <div class="section-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="row-list" id="cvSkillsList"></div>
+    </section>
+
+    <section id="projects" class="section glass reveal">
+      <div class="section-head">
+        <div class="section-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="row-list" id="cvProjectGroups"></div>
+      <div class="project-links">
+        <a id="cvGithubLink" href="https://github.com/sayan08880" target="_blank" class="btn-secondary"><i class="fa-brands fa-github mr-2"></i>View All on GitHub</a>
+      </div>
+    </section>
+
+    <section id="education" class="section glass reveal">
+      <div class="section-head">
+        <div class="section-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="row-list" id="cvEducationList"></div>
+    </section>
+
+    <section class="section glass reveal">
+      <div class="section-head">
+        <div class="section-icon"><i class="fa-solid fa-language"></i></div>
+        <h2 class="section-title">Languages</h2>
+      </div>
+      <div class="row-list" id="cvLanguagesList"></div>
+    </section>
+  </main>
+
+  <div class="particles" id="particles"></div>
+  <script src="portfolio-data.js"></script>
+  <script src="portfolio-render.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIL</title>
+    <link rel="icon" type="image/jpeg" href="logo.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgba(5, 4, 52, 0.993);
+            color: aliceblue;
+            min-height: 100vh;
+        }
+
+        .contact {
+            padding: 120px 10% 100px;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-heading h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: aliceblue;
+        }
+
+        .section-heading h2 span {
+            color: #00abf0;
+        }
+
+        .contact-container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(0, 171, 240, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 171, 240, 0.12);
+            transition: all 0.4s ease;
+        }
+
+        .contact-container:hover {
+            border-color: #00abf0;
+            box-shadow: 0 20px 40px rgba(0, 171, 240, 0.22);
+            transform: translateY(-8px);
+        }
+
+        .contact-container p {
+            text-align: center;
+            color: rgb(200, 200, 230);
+            margin-bottom: 30px;
+            font-size: 15.5px;
+            line-height: 1.6;
+        }
+
+        .input-group {
+            margin-bottom: 22px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: aliceblue;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 15px 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 171, 240, 0.25);
+            outline: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: aliceblue;
+            font-size: 15px;
+            transition: 0.3s ease;
+        }
+
+        .input-group input::placeholder,
+        .input-group textarea::placeholder {
+            color: rgba(240, 248, 255, 0.55);
+        }
+
+        .input-group input:focus,
+        .input-group textarea:focus {
+            border-color: #00abf0;
+            box-shadow: 0 0 15px rgba(0, 171, 240, 0.25);
+        }
+
+        .input-group textarea {
+            height: 140px;
+            resize: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            background: transparent;
+            color: white;
+            border: 2px solid #00d4ff;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            font-weight: 600;
+        }
+
+        .submit-btn:hover {
+            background: #00d4ff;
+            color: #050433;
+            transform: scale(1.03);
+        }
+
+        .back-btn-container {
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        .s2 {
+            padding: 14px 40px;
+            font-size: 1.15rem;
+            background: transparent;
+            color: white;
+            border: 2px solid #00d4ff;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .s2:hover {
+            background: #00d4ff;
+            color: #050433;
+            transform: scale(1.08);
+        }
+
+        .particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(0, 212, 255, 0.5);
+            animation: floatDot linear infinite;
+        }
+
+        @keyframes floatDot {
+            0%   { transform: translateY(0) scale(1); opacity: 0; }
+            20%  { opacity: 0.6; }
+            80%  { opacity: 0.3; }
+            100% { transform: translateY(-60px) scale(0.5); opacity: 0; }
+        }
+
+        @media (max-width: 900px) {
+            .contact {
+                padding: 100px 6% 80px;
+            }
+
+            .section-heading h2 {
+                font-size: 36px;
+            }
+
+            .contact-container {
+                padding: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact {
+                padding: 90px 5% 70px;
+            }
+
+            .section-heading h2 {
+                font-size: 32px;
+            }
+
+            .contact-container {
+                padding: 25px 20px;
+            }
+
+            .s2 {
+                padding: 12px 32px;
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contact" id="contact">
+        <div class="section-heading">
+            <h2>CONTACT <span>ME</span></h2>
+        </div>
+
+        <div class="contact-container">
+            <p>HAVE A PROJECT, QUESTION, OR COLLABORATION IDEA? SEND ME A MESSAGE DIRECTLY</p>
+
+            <form action="https://formsubmit.co/dasguptasayan.080@gmail.com" method="POST">
+
+                <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <div class="input-group">
+                    <label>ENTER NAME</label>
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>CONTACT NUMBER</label>
+                    <input type="tel" name="Contact Number" placeholder="Enter your contact number" required>
+                </div>
+
+                <div class="input-group">
+                    <label>EMAIL ADDRESS</label>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>MESSAGE</label>
+                    <textarea name="Message" placeholder="Write your message..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="back-btn-container">
+            <a href="index.html">
+                <button class="s2">BACK TO HOME</button>
+            </a>
+        </div>
+
+        <div class="particles" id="particles"></div>
+    </section>
+
+    <script>
+        const container = document.getElementById('particles');
+
+        for (let i = 0; i < 35; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            dot.style.left = Math.random() * 100 + 'vw';
+            dot.style.top = Math.random() * 100 + 'vh';
+            dot.style.animationDuration = (4 + Math.random() * 6) + 's';
+            dot.style.animationDelay = (Math.random() * 6) + 's';
+            dot.style.width = dot.style.height = (2 + Math.random() * 4) + 'px';
+            container.appendChild(dot);
+        }
+    </script>
+
+</body>
+</html>

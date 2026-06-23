@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ================================
+   GLOBAL RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(0, 171, 240, .2), transparent 35%),
+    linear-gradient(135deg, #050433, #0a0a5c 65%, #02021f);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ================================
+   LOGIN SCREEN CENTER
+================================ */
+
+#loginView.login-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: min(500px, calc(100% - 32px));
+  margin: 0;
+  padding: 32px 28px;
+
+  text-align: center;
+  z-index: 5;
+}
+
+#loginView.login-card h2 {
+  color: #00d4ff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#loginView.login-card p {
+  color: #c8d2ff;
+  margin-bottom: 18px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+#loginView.login-card .field {
+  align-items: center;
+  text-align: center;
+}
+
+#loginView.login-card label {
+  text-align: center;
+}
+
+#loginView.login-card input {
+  text-align: center;
+}
+
+#loginView.login-card .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+}
+
+#loginView.login-card .status {
+  text-align: center;
+}
+
+#loginView.login-card[hidden] {
+  display: none;
+}
+
+/* ================================
+   ADMIN MAIN LAYOUT
+================================ */
+
+.admin-shell {
+  width: min(1180px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 28px 0 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.admin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+
+  padding: 18px 22px;
+  margin-bottom: 24px;
+
+  border: 1px solid rgba(0, 212, 255, .2);
+  background: rgba(255, 255, 255, .07);
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .28);
+}
+
+.brand h1 {
+  font-size: clamp(1.5rem, 4vw, 2.7rem);
+  line-height: 1;
+  color: #00d4ff;
+}
+
+.brand p {
+  color: #b8c7ff;
+  margin-top: 7px;
+  font-weight: 500;
+}
+
+.top-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 20px;
+  cursor: pointer;
+
+  font-weight: 800;
+  letter-spacing: .02em;
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00d4ff, #00ff88);
+  color: #050433;
+  box-shadow: 0 14px 30px rgba(0, 212, 255, .22);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .14);
+  color: #fff;
+}
+
+.btn-danger {
+  background: rgba(239, 68, 68, .18);
+  color: #fecaca;
+  border: 1px solid rgba(239, 68, 68, .35);
+}
+
+.btn-small {
+  padding: 9px 14px;
+  font-size: .84rem;
+}
+
+/* ================================
+   NOTICE BOX
+================================ */
+
+.notice {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 214, 10, .08);
+  border: 1px solid rgba(255, 214, 10, .25);
+  color: #fff7bf;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+/* ================================
+   CARDS / PANELS
+================================ */
+
+.login-card,
+.panel {
+  border: 1px solid rgba(0, 212, 255, .18);
+  background: rgba(255, 255, 255, .07);
+  backdrop-filter: blur(18px);
+  border-radius: 26px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .28);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.panel {
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.panel.full {
+  grid-column: 1 / -1;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.panel h2 {
+  font-size: 1.25rem;
+  color: #00d4ff;
+}
+
+.panel p.help {
+  color: #b8c7ff;
+  font-size: .92rem;
+  margin-top: 5px;
+}
+
+/* ================================
+   FORM
+================================ */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+label {
+  color: #dbeafe;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, .13);
+  background: rgba(2, 6, 23, .45);
+  color: #fff;
+  border-radius: 16px;
+  padding: 12px 14px;
+  outline: none;
+  font-size: .95rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(0, 212, 255, .8);
+  box-shadow: 0 0 0 4px rgba(0, 212, 255, .08);
+}
+
+/* ================================
+   DYNAMIC ROWS
+================================ */
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cms-row {
+  padding: 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .055);
+  border: 1px solid rgba(255, 255, 255, .11);
+}
+
+.row-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.row-title strong {
+  color: #00ffcc;
+}
+
+/* ================================
+   JSON EDITOR
+================================ */
+
+.json-box textarea {
+  min-height: 360px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .86rem;
+}
+
+.status {
+  margin-top: 12px;
+  color: #86efac;
+  font-weight: 700;
+  min-height: 24px;
+}
+
+/* ================================
+   PARTICLES BACKGROUND
+================================ */
+
+.particles {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 212, 255, .45);
+  animation: floatDot linear infinite;
+}
+
+@keyframes floatDot {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: .55;
+  }
+
+  80% {
+    opacity: .3;
+  }
+
+  100% {
+    transform: translateY(-60px) scale(.5);
+    opacity: 0;
+  }
+}
+
+/* ================================
+   ADD ROW FLASH EFFECT
+================================ */
+
+.row-flash {
+  outline: 2px solid #00d4ff;
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.45);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .top-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  #loginView.login-card {
+    width: calc(100% - 24px);
+    padding: 26px 20px;
+  }
+
+  #loginView.login-card .btn {
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  .admin-shell {
+    width: calc(100% - 20px);
+    padding-top: 18px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .panel-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-actions {
+    width: 100%;
+  }
+
+  .top-actions .btn {
+    flex: 1;
+    text-align: center;
+  }
+}
