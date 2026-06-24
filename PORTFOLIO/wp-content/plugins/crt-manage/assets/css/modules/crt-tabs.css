@@ -1,0 +1,490 @@
+
+.crt-tabs {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.crt-tabs-position-above>.elementor-widget-container>.crt-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.crt-tabs-position-above>.crt-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.crt-tabs-position-left>.elementor-widget-container>.crt-tabs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.crt-tabs-position-left>.crt-tabs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.crt-tabs-position-right>.elementor-widget-container>.crt-tabs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.crt-tabs-position-right>.crt-tabs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.crt-tabs-wrap {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.crt-tabs-position-left>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap,
+.crt-tabs-position-right>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.crt-tabs-position-left>.crt-tabs>.crt-tabs-wrap,
+.crt-tabs-position-right>.crt-tabs>.crt-tabs-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+    .crt-tabs-responsive-yes.crt-tabs-position-left>.elementor-widget-container>.crt-tabs,
+    .crt-tabs-responsive-yes.crt-tabs-position-right>.elementor-widget-container>.crt-tabs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .crt-tabs-responsive-yes.crt-tabs-position-left>.crt-tabs,
+    .crt-tabs-responsive-yes.crt-tabs-position-right>.crt-tabs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .crt-tabs-responsive-yes.crt-tabs-position-left>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap,
+    .crt-tabs-responsive-yes.crt-tabs-position-right>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap {
+        width: 100%;
+    }
+    .crt-tabs-responsive-yes.crt-tabs-position-left>.crt-tabs>.crt-tabs-wrap,
+    .crt-tabs-responsive-yes.crt-tabs-position-right>.crt-tabs>.crt-tabs-wrap {
+        width: 100%;
+    }
+}
+
+
+/* Tabs Position */
+
+.crt-tabs-hr-position-center>.elementor-widget-container>.crt-tabs {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.crt-tabs-hr-position-center>.crt-tabs {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.crt-tabs-hr-position-left>.elementor-widget-container>.crt-tabs {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.crt-tabs-hr-position-left>.crt-tabs {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.crt-tabs-hr-position-right>.elementor-widget-container>.crt-tabs {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.crt-tabs-hr-position-right>.crt-tabs {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.crt-tabs-hr-position-justify>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab,
+.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+}
+.crt-tabs-hr-position-justify>.crt-tabs>.crt-tabs-wrap>.crt-tab,
+.crt-tabs>.crt-tabs-wrap>.crt-tab {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+}
+
+.crt-tab {
+    position: relative;
+    z-index: 25;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.crt-tab,
+.crt-tab-icon,
+.crt-tab-image,
+.crt-tab-title {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+}
+
+.crt-tab-icon,
+.crt-tab-icon i,
+.crt-tab-image,
+.crt-tab-title {
+    -webkit-transition-duration: inherit;
+    -o-transition-duration: inherit;
+    transition-duration: inherit;
+}
+
+.elementor-element.elementor-widget-crt-tabs>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab.crt-tab-active .crt-tab-title,
+.elementor-element.elementor-widget-crt-tabs>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:hover .crt-tab-title,
+.elementor-element.elementor-widget-crt-tabs>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab .crt-tab-title {
+    font-size: 15px;
+    font-weight: 500;
+}
+.elementor-element.elementor-widget-crt-tabs>.crt-tabs>.crt-tabs-wrap>.crt-tab.crt-tab-active .crt-tab-title,
+.elementor-element.elementor-widget-crt-tabs>.crt-tabs>.crt-tabs-wrap>.crt-tab:hover .crt-tab-title,
+.elementor-element.elementor-widget-crt-tabs>.crt-tabs>.crt-tabs-wrap>.crt-tab .crt-tab-title {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Tab Content */
+
+.crt-tabs-content-wrap {
+    position: relative;
+    width: 100%;
+    -webkit-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+    -webkit-transition-timing-function: cubic-bezier(0.5, 0.9, 0.6, 0.95);
+    -o-transition-timing-function: cubic-bezier(0.5, 0.9, 0.6, 0.95);
+    transition-timing-function: cubic-bezier(0.5, 0.9, 0.6, 0.95);
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.crt-tab-content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.elementor-element.elementor-widget-crt-tabs>.elementor-widget-container>.crt-tabs>.crt-tabs-content-wrap>.crt-tab-content {
+    font-size: 14px;
+}
+.elementor-element.elementor-widget-crt-tabs>.crt-tabs>.crt-tabs-content-wrap>.crt-tab-content {
+    font-size: 14px;
+}
+
+.crt-tab-content-active {
+    position: relative;
+    z-index: 100;
+}
+
+.crt-tab-content-inner {
+    opacity: 0;
+}
+
+.crt-tab-content-active .crt-tab-content-inner.crt-overlay-none {
+    opacity: 1;
+}
+
+
+/* Tab Icon */
+
+.crt-tabs-icon-position-left>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab .crt-tab-image,
+.crt-tabs-icon-position-left>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab .crt-tab-icon {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
+.crt-tabs-icon-position-left>.crt-tabs>.crt-tabs-wrap>.crt-tab .crt-tab-image,
+.crt-tabs-icon-position-left>.crt-tabs>.crt-tabs-wrap>.crt-tab .crt-tab-icon {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.crt-tabs-icon-position-left>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab .crt-tab-title {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+.crt-tabs-icon-position-left>.crt-tabs>.crt-tabs-wrap>.crt-tab .crt-tab-title {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.crt-tabs-icon-position-center>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+.crt-tabs-icon-position-center>.crt-tabs>.crt-tabs-wrap>.crt-tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+
+/* Triangle */
+
+.crt-tabs-triangle-yes>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    -webkit-transition-property: border-color;
+    -o-transition-property: border-color;
+    transition-property: border-color;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 110;
+}
+.crt-tabs-triangle-yes>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    -webkit-transition-property: border-color;
+    -o-transition-property: border-color;
+    transition-property: border-color;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 110;
+}
+
+.crt-tabs-triangle-yes>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab-active.crt-tab:before {
+    opacity: 1;
+    visibility: visible;
+}
+.crt-tabs-triangle-yes>.crt-tabs>.crt-tabs-wrap>.crt-tab-active.crt-tab:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.crt-tabs-position-above>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: white;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+.crt-tabs-position-above>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: white;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.crt-tabs-position-left>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before,
+.crt-tabs-position-right>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+}
+.crt-tabs-position-left>.crt-tabs>.crt-tabs-wrap>.crt-tab:before,
+.crt-tabs-position-right>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+}
+
+
+/* Triangle Position */
+
+.crt-tabs-position-above.crt-tabs-triangle-type-outer.crt-tabs-position-above>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.crt-tabs-position-above.crt-tabs-triangle-type-outer.crt-tabs-position-above>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.crt-tabs-position-above.crt-tabs-triangle-type-inner.crt-tabs-position-above>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    left: 50%;
+    -ms-transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
+    -webkit-transform: translateX(-50%) rotate(180deg);
+    bottom: -1px;
+}
+.crt-tabs-position-above.crt-tabs-triangle-type-inner.crt-tabs-position-above>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    left: 50%;
+    -ms-transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
+    -webkit-transform: translateX(-50%) rotate(180deg);
+    bottom: -1px;
+}
+
+.crt-tabs-position-left.crt-tabs-triangle-type-outer>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before,
+.crt-tabs-position-right.crt-tabs-triangle-type-inner>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    top: 50%;
+    -ms-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+    -webkit-transform: translateY(-50%) rotate(180deg);
+}
+.crt-tabs-position-left.crt-tabs-triangle-type-outer>.crt-tabs>.crt-tabs-wrap>.crt-tab:before,
+.crt-tabs-position-right.crt-tabs-triangle-type-inner>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    top: 50%;
+    -ms-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+    -webkit-transform: translateY(-50%) rotate(180deg);
+}
+
+.crt-tabs-position-right.crt-tabs-triangle-type-outer>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before,
+.crt-tabs-position-left.crt-tabs-triangle-type-inner>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.crt-tabs-position-right.crt-tabs-triangle-type-outer>.crt-tabs>.crt-tabs-wrap>.crt-tab:before,
+.crt-tabs-position-left.crt-tabs-triangle-type-inner>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.crt-tabs-position-left.crt-tabs-triangle-type-inner>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    right: 0;
+}
+.crt-tabs-position-left.crt-tabs-triangle-type-inner>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    right: 0;
+}
+
+.crt-tabs-position-right.crt-tabs-triangle-type-inner>.elementor-widget-container>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    left: 0;
+}
+.crt-tabs-position-right.crt-tabs-triangle-type-inner>.crt-tabs>.crt-tabs-wrap>.crt-tab:before {
+    left: 0;
+}
+
+
+/* Ticker Typing Effect */
+
+.crt-ticker-effect-typing .crt-ticker-title:after {
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1;
+    color: inherit;
+    margin-left: 2px;
+}
+
+.crt-ticker-effect-typing .slick-current .crt-ticker-title:after {
+    -webkit-animation-name: crt-cursor-blink;
+    animation-name: crt-cursor-blink;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.crt-ticker-effect-typing .slick-current .crt-ticker-title-inner {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-animation: crt-ticker-typing 1s steps(30, end);
+    animation: crt-ticker-typing 1s steps(30, end);
+    overflow: hidden;
+}
+
+@-webkit-keyframes crt-ticker-typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes crt-ticker-typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,159 @@
+    .crt-twitter-feed-item-username {
+        margin: 0;
+    }
+
+    .crt-tweet .inner-block {
+        display: inline-block;
+    }
+
+    .crt-twitter-feed-cont .swiper-pagination-bullets,
+    .crt-twitter-feed-cont .swiper-pagination-fraction {
+        display: inline-block !important;
+        width: auto !important;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+
+    .crt-twitter-hidden-item {
+        opacity: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .crt-twitter-feed-item-display-block {
+        clear: both;
+    }
+
+    .crt-twitter-feed-item-display-inline.crt-twitter-feed-item-align-left,
+    .crt-twitter-feed-item-display-custom.crt-twitter-feed-item-align-left {
+        float: left;
+    }
+
+    .crt-twitter-feed-item-display-inline.crt-twitter-feed-item-align-right,
+    .crt-twitter-feed-item-display-custom.crt-twitter-feed-item-align-right {
+        float: right;
+    }
+
+    .crt-twitter-feed-item-display-inline.crt-twitter-feed-item-align-center,
+    .crt-twitter-feed-item-display-custom.crt-twitter-feed-item-align-center {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .crt-tf-header-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .crt-tf-header-user p {
+        text-align: left;
+    }
+
+    .crt-twitter-feed-header p {
+        margin: 0;
+    }
+
+    .crt-twitter-feed-cont {
+        position: relative;
+    }
+
+    .crt-twitter-feed p {
+        margin: 0;
+    }
+
+    .crt-tf-statistics {
+        text-align: left;
+    }
+
+    @media screen and (max-width: 767px) {
+        .crt-tf-statistics {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+        }
+    }
+
+    .crt-tf-header-profile-img {
+        width: 50%;
+        margin-top: -100px;
+    }
+    
+    .crt-twitter-follow-btn-wrap {
+        margin-top: 10px;
+    }
+
+    .crt-tf-header-profile-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .crt-twitter-feed-masonry .crt-twitter-feed {
+        height: auto;
+        /* padding-top: 0px; */
+        /* text-align: center; */
+        display: block;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .crt-twitter-feed-grid .crt-twitter-feed {
+         display: -ms-grid;
+         display: grid;
+         -ms-grid-columns: minmax(0, 1fr) 5px minmax(0, 1fr) 5px minmax(0, 1fr);
+         grid-template-columns: repeat(3, minmax(0, 1fr));
+         -webkit-column-gap: 5px;
+            -moz-column-gap: 5px;
+                 column-gap: 5px;
+         row-gap: 5px;
+    }
+
+    .crt-twitter-feed .button {
+        margin-bottom: 20px;
+    }
+
+    .crt-twitter-feed-list .crt-twitter-feed .crt-tweet,
+    .crt-twitter-feed-masonry .crt-twitter-feed .crt-tweet  {
+        margin-bottom: 20px;
+    }
+
+    .crt-twitter-feed .crt-tweet {
+        /* max-width: 500px; */
+        /* margin: 0 auto; */
+        border: 1px solid #A2A2A2;
+        -webkit-column-break-inside: avoid;
+        -moz-column-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .crt-twitter-feed figure img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .crt-twit-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .crt-twitter-follow-btn {
+        display: inline-block;
+    }
+
+    .crt-load-more-twitter-posts {
+        cursor: pointer;
+    }

@@ -1,0 +1,68 @@
+input.crt-date-filter-start {
+    width: 49%;
+    margin-right: 2%;
+}
+
+input.crt-date-filter-end {
+    width: 49%;
+}
+
+/* Grid Active Filters */
+.crt-af-active-filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 5px;
+}
+
+.crt-af-active-filters span {
+    display: block;
+    cursor: pointer;
+}
+
+.crt-af-active-filters .crt-remove-filter span {
+    vertical-align: middle;
+    line-height: 1;
+    margin-left: 5px;
+}
+
+[class^="crt-af-active-wrap-"] {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+[class^="crt-af-active-wrap-"] span {
+    display: inline-block;
+}
+
+[class^="crt-af-active-wrap-"]:empty {
+    display: none;
+}
+
+.crt-af-active-filters .crt-af-reset-btn {
+    background-color: transparent;
+}
+
+.crt-af-rating-filter input {
+    display: none;
+}
+
+.crt-af-rating-filter .crt-woo-rating {
+    cursor: pointer;
+}
+
+/* TMP style for demo rating */
+.crt-af-rating-filter li > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}

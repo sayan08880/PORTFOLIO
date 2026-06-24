@@ -1,0 +1,51 @@
+
+.crt-dual-heading-icon-and-desc-top .crt-dual-heading-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+}
+
+.crt-dual-heading-icon-top .crt-dual-heading-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+  
+.crt-dual-heading-icon-top .crt-dual-heading-icon-wrap {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+}
+
+.crt-dual-heading-desc-top .crt-dual-heading-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+  
+.crt-dual-heading-desc-top .crt-dual-heading-description {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+}
+
+.crt-dual-title {
+    margin: 0 0 0 0;
+}
+
+.crt-dual-title .first,
+.crt-dual-title .second {
+    display: inline-block;
+}

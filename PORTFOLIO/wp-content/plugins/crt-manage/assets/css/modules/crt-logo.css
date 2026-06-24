@@ -1,0 +1,68 @@
+
+.crt-logo {
+    position: relative;
+    display: inline-table;
+    overflow: hidden;
+}
+
+.crt-logo-image img {
+    display: block;
+}
+
+.crt-logo-description {
+    margin: 0;
+}
+
+.crt-logo-image,
+.crt-logo-text {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 7;
+}
+
+.crt-logo-url {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.crt-logo-position-left .crt-logo-image,
+.crt-logo-position-left .crt-logo-text {
+    float: left;
+}
+
+.crt-logo-position-right .crt-logo-image,
+.crt-logo-position-right .crt-logo-text {
+    float: right;
+}
+
+.crt-logo-position-center .crt-logo-image {
+    margin: 0 auto;
+}
+
+.crt-logo-position-center .crt-logo-text {
+    text-align: center;
+}
+
+.crt-logo-position-left .crt-logo-text,
+.crt-logo-position-right .crt-logo-text {
+    text-align: left;
+}
+
+
+/* Defaults */
+
+.elementor-widget-crt-logo .crt-logo-title {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.elementor-widget-crt-logo .crt-logo-description {
+    font-size: 13px;
+}
+

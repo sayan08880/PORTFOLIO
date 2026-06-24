@@ -1,0 +1,200 @@
+
+.crt-image-accordion * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.crt-img-accordion-wrapper-link-yes {
+    cursor: pointer;
+}
+
+.crt-image-accordion-wrap {
+    overflow: hidden;
+    opacity: 0;
+}
+
+.crt-skew-acc-images-yes .crt-image-accordion-wrap {
+    overflow: visible;
+}
+
+.crt-image-accordion-wrap h1 {
+    position: relative;
+    margin-bottom: 45px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #424242;
+}
+
+.crt-image-accordion-wrap .crt-image-accordion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.crt-image-accordion-wrap .crt-image-accordion-item {
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    overflow: hidden;
+}
+
+.crt-image-accordion-wrap .crt-image-accordion-item .crt-accordion-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.crt-img-accordion-item-description .inner-block {
+    display: inline-block;
+}
+
+.crt-image-accordion-wrap .crt-img-accordion-media-hover,
+.crt-image-accordion-wrap .crt-img-accordion-hover-bg {
+    /* pointer-events: none; */
+    position: absolute;
+}
+
+.crt-image-accordion-item {
+    text-align: center;
+}
+
+.crt-image-accordion-item-inner {
+    position: relative;
+    text-align: center;
+}
+
+.crt-img-accordion-item-display-custom.crt-img-accordion-item-align-center {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.crt-img-accordion-media-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.crt-img-accordion-media-hover-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.crt-img-accordion-media-hover-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.crt-img-accordion-media-hover-middle {
+    position: relative;
+    z-index: 2;
+}
+
+.crt-img-accordion-sep-style-1 .inner-block>span,
+.crt-img-accordion-sep-style-2 .inner-block>span {
+    display: inline-block;
+}
+
+.crt-img-accordion-item-display-custom.crt-img-accordion-sep-style-2 .inner-block>span,
+.crt-img-accordion-item-display-custom.crt-img-accordion-sep-style-1 .inner-block>span {
+    width: 100%;
+}
+
+.crt-img-accordion-item-display-block {
+    clear: both;
+}
+
+.crt-img-accordion-item-separator.crt-img-accordion-item-display-inline span {
+    width: 100% !important;
+}
+
+.crt-img-accordion-item-display-inline.crt-img-accordion-item-align-left,
+.crt-img-accordion-item-display-custom.crt-img-accordion-item-align-left {
+    float: left;
+}
+
+.crt-img-accordion-item-display-inline.crt-img-accordion-item-align-right,
+.crt-img-accordion-item-display-custom.crt-img-accordion-item-align-right {
+    float: right;
+}
+
+.crt-img-accordion-item-display-inline.crt-img-accordion-item-align-center,
+.crt-img-accordion-item-display-custom.crt-img-accordion-item-align-center {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.crt-accordion-image-wrap {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.crt-accordion-image-wrap img {
+    display: inline;
+    max-height: 100%;
+}
+
+.crt-img-accordion-item-lightbox .inner-block>span,
+.crt-img-accordion-lightbox-overlay {
+    cursor: pointer;
+}
+
+.crt-img-accordion-item-lightbox {
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.crt-animation-wrap-active .crt-img-accordion-item-lightbox {
+    pointer-events: auto;
+}
+
+.crt-img-accordion-item-lightbox .inner-block {
+    position: relative;
+}
+
+.crt-img-accordion-lightbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.crt-image-accordion-item .inner-block a {
+    position: relative;
+    display: inline-block;
+}
+
+.crt-image-accordion .crt-template-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}

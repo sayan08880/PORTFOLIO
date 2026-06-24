@@ -1,0 +1,31 @@
+
+.crt-google-map .gm-style-iw-c {
+    padding: 0 !important;
+}
+
+.crt-google-map .gm-style-iw-c>button {
+    top: 0 !important;
+    right: 0 !important;
+}
+
+.crt-google-map .gm-style-iw-c .crt-gm-iwindow h3 {
+    margin-bottom: 7px;
+}
+
+.crt-google-map .gm-style-iw-d {
+    overflow: hidden !important;
+}
+
+.crt-google-map .gm-style img {
+    max-width: none !important;
+}
+
+.crt-api-key-missing {
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.crt-api-key-missing a {
+    font-weight: bold;
+}

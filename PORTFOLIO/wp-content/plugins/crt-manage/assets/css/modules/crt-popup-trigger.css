@@ -1,0 +1,83 @@
+.crt-popup-trigger-button {
+    display: inline-block;
+    font-size: 14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.crt-popup-trigger-button svg {
+    display: block;
+}
+
+
+/* Only For Editing */
+
+.crt-popup-container .elementor-editor-section-settings {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 0 0 5px 5px;
+}
+
+.crt-popup-container .elementor-editor-section-settings .elementor-editor-element-setting:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+.crt-popup-container .elementor-editor-section-settings .elementor-editor-element-setting:first-child:before {
+    top: 0;
+    border-width: 0 12px 22px 0;
+}
+
+.crt-popup-container .elementor-editor-section-settings .elementor-editor-element-setting:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+.crt-popup-container .elementor-editor-section-settings .elementor-editor-element-setting:last-child:after {
+    top: 0;
+    border-width: 0 0 22px 12px;
+}
+
+.elementor-editor-active [data-elementor-type="crt-popups"] .elementor-section-wrap:not(:empty)+#elementor-add-new-section,
+.elementor-editor-active [data-elementor-type="crt-popups"]:not(.elementor-edit-mode) {
+    display: none;
+}
+
+.elementor .elementor-widget-crt-popup-trigger .crt-popup-trigger-button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.elementor-editor-active [data-elementor-type="crt-popup"] .elementor-section-wrap:not(:empty)+#elementor-add-new-section,
+.elementor-editor-active [data-elementor-type="crt-popup"]:not(.elementor-edit-mode) {
+    display: none;
+}
+
+
+/* Template Edit button */
+
+.crt-template-edit-btn {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    display: none;
+    line-height: 1;
+    padding: 8px 13px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.elementor-editor-active .crt-template-edit-btn {
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.elementor-editor-active .elementor-element-edit-mode:hover .crt-template-edit-btn {
+    opacity: 1;
+    visibility: visible;
+}
+

@@ -1,0 +1,30 @@
+.crt-filter-attribute-list, .crt-filter-taxonomy-list {
+    list-style: none;
+    padding: 0;
+}
+.crt-filter-attribute-list li,
+.crt-filter-taxonomy-list li {
+    margin: 0 0 15px;
+}
+.crt-filter-attribute-list li a,
+.crt-filter-taxonomy-list li a {
+    display: flex;
+    align-items: center;
+}
+.crt-filter-attribute-list li a:before,
+.crt-filter-taxonomy-list li a:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 1px solid #cdcdcd;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.crt-filter-attribute-list li.active a:before,
+.crt-filter-taxonomy-list li.active a:before {
+    background-color: #cdcdcd;
+}
+.crt-filter-reset-btn {
+    cursor: pointer;
+}

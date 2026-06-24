@@ -1,0 +1,40 @@
+.crt-marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+}
+
+.crt-marquee-track {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    will-change: transform;
+}
+
+.crt-marquee-item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.crt-marquee-item-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.crt-marquee-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.crt-marquee-separator svg {
+    display: block;
+}

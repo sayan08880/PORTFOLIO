@@ -1,0 +1,412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-19 14:27+0545\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: patterns/404.php:10
+msgid " 4"
+msgstr ""
+
+#: patterns/404.php:10
+msgid "0"
+msgstr ""
+
+#: patterns/404.php:10
+msgid "4 "
+msgstr ""
+
+#: patterns/404.php:14
+msgid "Oops! That page can’t be found."
+msgstr ""
+
+#: patterns/clients.php:12
+msgid "Popular Clients"
+msgstr ""
+
+#: patterns/clients.php:16
+msgid "Awesome Clients"
+msgstr ""
+
+#: patterns/footer.php:7
+msgid "Pro Portfolio"
+msgstr ""
+
+#: patterns/footer.php:12
+msgid ""
+"Lorem ipsum dolor sit amet consectetur adipiscing elit non natoque "
+"ullamcorper facilisis dui, erat mi pharetra gravida eu netus laoreet "
+"scelerisque nunc risus libero rutrum enim, condimentum consequat sems."
+msgstr ""
+
+#: patterns/footer.php:19
+msgid "Gallery"
+msgstr ""
+
+#: patterns/footer.php:53
+msgid "Quick Links"
+msgstr ""
+
+#: patterns/footer.php:59
+msgid "About Us"
+msgstr ""
+
+#: patterns/footer.php:63
+msgid "Services"
+msgstr ""
+
+#: patterns/footer.php:67 patterns/header.php:25
+msgid "Contact Us"
+msgstr ""
+
+#: patterns/footer.php:71
+msgid "FAQ"
+msgstr ""
+
+#: patterns/footer.php:75
+msgid "Our Vision"
+msgstr ""
+
+#: patterns/footer.php:83
+msgid "Quick Contact"
+msgstr ""
+
+#: patterns/footer.php:98
+msgid "+1 2059 458 96548 59"
+msgstr ""
+
+#: patterns/footer.php:112
+msgid "support@example.com"
+msgstr ""
+
+#: patterns/footer.php:126
+msgid "23 Miller Court, Conway"
+msgstr ""
+
+#: patterns/footer.php:140
+msgid "9 AM  - 6 PM"
+msgstr ""
+
+#: patterns/footer.php:163
+msgid "Copyright © 2025 | Powered by"
+msgstr ""
+
+#: patterns/footer.php:163
+msgid "WordPress"
+msgstr ""
+
+#: patterns/main-banner.php:6
+msgid "Welcome to my world"
+msgstr ""
+
+#: patterns/main-banner.php:10
+msgid "Hi, I’m"
+msgstr ""
+
+#: patterns/main-banner.php:10
+msgid "Jone Lee"
+msgstr ""
+
+#: patterns/main-banner.php:10
+msgid "a"
+msgstr ""
+
+#: patterns/main-banner.php:10
+msgid "UI/UX Designer"
+msgstr ""
+
+#: patterns/main-banner.php:14
+msgid ""
+"I use animation as a third dimension by which to simplify experiences and "
+"kuiding thro each and every interaction. I’m not adding motion just to "
+"spruce things up, but doing it in ways that."
+msgstr ""
+
+#: patterns/main-banner.php:19
+msgid "Get Started"
+msgstr ""
+
+#: patterns/main-banner.php:23
+msgid "Why Choose Us?"
+msgstr ""
+
+#: patterns/main-banner.php:30
+msgid "FIND WITH ME"
+msgstr ""
+
+#: patterns/main-banner.php:56
+msgid "BEST SKILL ON"
+msgstr ""
+
+#: patterns/my-blog.php:13
+msgid "Visit my blog and keep your feedback"
+msgstr ""
+
+#: patterns/my-blog.php:17
+msgid "My Blog"
+msgstr ""
+
+#: patterns/my-portfolio.php:13
+msgid "Visit my portfolio and keep your feedback"
+msgstr ""
+
+#: patterns/my-portfolio.php:17
+msgid "My Portfolio"
+msgstr ""
+
+#: patterns/resume.php:12
+msgid "7+ YEARS OF EXPERIENCE"
+msgstr ""
+
+#: patterns/resume.php:16
+msgid "My RESUME"
+msgstr ""
+
+#: patterns/resume.php:26
+msgid "1998 - 2010"
+msgstr ""
+
+#: patterns/resume.php:30
+msgid "Education Quality"
+msgstr ""
+
+#: patterns/resume.php:41
+msgid "BSc in Computer Science"
+msgstr ""
+
+#: patterns/resume.php:45
+msgid "University of DVI (2006 - 2010)"
+msgstr ""
+
+#: patterns/resume.php:51 patterns/resume.php:115
+msgid "3.9/4"
+msgstr ""
+
+#: patterns/resume.php:61
+msgid ""
+"The training provided by universities in order to prepare people to work in "
+"various sectors of the economy or areas of culture secondary education."
+msgstr ""
+
+#: patterns/resume.php:73
+msgid "AS - Science"
+msgstr ""
+
+#: patterns/resume.php:73
+msgid "Information"
+msgstr ""
+
+#: patterns/resume.php:77
+msgid "SuperKing College (2001 - 2005)"
+msgstr ""
+
+#: patterns/resume.php:83
+msgid "4.3/5"
+msgstr ""
+
+#: patterns/resume.php:93
+msgid ""
+"Higher education is tertiary education leading to award of an academic "
+"degree. Higher education, also called post-secondary education."
+msgstr ""
+
+#: patterns/resume.php:105
+msgid "Secondary School Education"
+msgstr ""
+
+#: patterns/resume.php:109
+msgid "Kingstar Secondary School (1998 - 2000)"
+msgstr ""
+
+#: patterns/resume.php:125
+msgid ""
+"Secondary education or post-primary education covers two phases on the "
+"International Standard Classification of Education scale secondary education."
+msgstr ""
+
+#: patterns/resume.php:136
+msgid "2012 -2022"
+msgstr ""
+
+#: patterns/resume.php:140
+msgid "Job Expeirence"
+msgstr ""
+
+#: patterns/resume.php:151
+msgid "Front-end Developer"
+msgstr ""
+
+#: patterns/resume.php:155
+msgid "Nike - (2020 - 2011)"
+msgstr ""
+
+#: patterns/resume.php:161
+msgid "USA"
+msgstr ""
+
+#: patterns/resume.php:171
+msgid ""
+"The India economy has grown strongly over recent years, having transformed "
+"itself from a producer and innovation-based economy."
+msgstr ""
+
+#: patterns/resume.php:183
+msgid "Web Developer"
+msgstr ""
+
+#: patterns/resume.php:183
+msgid "Trainer"
+msgstr ""
+
+#: patterns/resume.php:187
+msgid "Apple Developer Team - (2012 - 2016)"
+msgstr ""
+
+#: patterns/resume.php:193
+msgid "CANADA"
+msgstr ""
+
+#: patterns/resume.php:203
+msgid ""
+"A popular destination with a growing number of highly qualified homegrown "
+"graduates, its true that securing a role in Malaysia is not easy"
+msgstr ""
+
+#: patterns/resume.php:215
+msgid "Sr. Software Engineer"
+msgstr ""
+
+#: patterns/resume.php:219
+msgid "Google Out Tech - (2017 - Present)"
+msgstr ""
+
+#: patterns/resume.php:225
+msgid "INDIA"
+msgstr ""
+
+#: patterns/resume.php:235
+msgid ""
+"Google’s hiring process is an important part of our culture. Googlers care "
+"deeply about their teams and the people who make them up."
+msgstr ""
+
+#: patterns/services.php:12
+msgid "FEATURES"
+msgstr ""
+
+#: patterns/services.php:16
+msgid "What I Do"
+msgstr ""
+
+#: patterns/services.php:31
+msgid "Mobile App"
+msgstr ""
+
+#: patterns/services.php:35 patterns/services.php:101
+msgid ""
+"I throw myself down among the tall grass by the stream as Ilie close to the "
+"earth."
+msgstr ""
+
+#: patterns/services.php:39 patterns/services.php:61 patterns/services.php:83
+#: patterns/services.php:105 patterns/services.php:127
+#: patterns/services.php:149
+msgid "Read More"
+msgstr ""
+
+#: patterns/services.php:53
+msgid "SEO"
+msgstr ""
+
+#: patterns/services.php:57 patterns/services.php:123
+msgid ""
+"We’ll handle everything from to app development process until it is time to "
+"make your project live."
+msgstr ""
+
+#: patterns/services.php:75
+msgid "UX Development"
+msgstr ""
+
+#: patterns/services.php:79 patterns/services.php:145
+msgid ""
+"We’ll help you optimize your business processes to maximize and eliminate "
+"unnecessary costs."
+msgstr ""
+
+#: patterns/services.php:97 patterns/services.php:141
+msgid "Business Stratagy"
+msgstr ""
+
+#: patterns/services.php:119
+msgid "App Development"
+msgstr ""
+
+#: patterns/sidebar.php:19
+msgid "Recent Categories"
+msgstr ""
+
+#: patterns/sidebar.php:37
+msgid "Recent Posts"
+msgstr ""
+
+#: patterns/sidebar.php:55
+msgid "Post Archive"
+msgstr ""
+
+#: patterns/sidebar.php:75
+msgid "Catogery Tags"
+msgstr ""
+
+#: patterns/sidebar.php:93
+msgid "Connect With Us"
+msgstr ""
+
+#: patterns/testimonials.php:13
+msgid "What Clients Say"
+msgstr ""
+
+#: patterns/testimonials.php:17
+msgid "Testimonial"
+msgstr ""
+
+#: patterns/testimonials.php:31
+msgid "MODERN - THEMES"
+msgstr ""
+
+#: patterns/testimonials.php:35
+msgid "Nevinee Acotanza"
+msgstr ""
+
+#: patterns/testimonials.php:39
+msgid "Chief Operating Officer"
+msgstr ""
+
+#: patterns/testimonials.php:55
+msgid "Android App Development"
+msgstr ""
+
+#: patterns/testimonials.php:59
+msgid "via Upwork - Mar 4, 2015 - Aug 30, 2021"
+msgstr ""
+
+#: patterns/testimonials.php:91
+msgid ""
+"Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam "
+"sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris "
+"hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris "
+"test"
+msgstr ""

@@ -1,0 +1,429 @@
+
+.crt-image-scroll-wrap {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 300px; /* Default height */
+}
+
+.crt-image-scroll-wrap img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+/* Vertical Scroll */
+.crt-scroll-vertical img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+}
+
+.crt-scroll-horizontal {
+    display: block; /* Make the image scroll within a single block element */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%;
+    height: 100%;
+    white-space: nowrap; /* Prevent line breaks to maintain scrolling flow */
+}
+
+.crt-scroll-horizontal img {
+    height: 100%; /* Take up the container's full height */
+    width: auto; /* Allow image to determine its natural width */
+    max-width: none; /* Remove default max-width restrictions */
+    -o-object-fit: cover;
+       object-fit: cover; /* Ensure the image fits inside its container */
+    display: inline-block; /* Make sure image is inline for scrolling */
+}
+
+.crt-scroll-horizontal::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar in Webkit browsers */
+}
+
+/* Hover Effects */
+.crt-trigger-hover:hover img {
+    will-change: transform;
+}
+
+.crt-image-scroll-link {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+
+.crt-image-scroll-link:hover {
+    text-decoration: none;
+}
+
+.crt-image-scroll-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.crt-image-scroll-icon {
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    z-index: 2; /* Ensure icon stays above overlay */
+}
+
+.crt-image-scroll-icon-hidden {
+    opacity: 0;
+}
+
+/* Video Playlist Widget */
+.crt-vplaylist-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .crt-vplaylist-wrap * {
+    color: white;
+    margin: 0;
+  }
+  
+  .crt-vplaylist-wrap .video-player-wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.67%;
+            flex: 0 0 66.67%;
+    width: 66.67%;
+    height: 100%;
+  }
+  
+  .crt-vplaylist-wrap .video-player {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  
+  .crt-vplaylist-wrap .video-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .crt-vplaylist-thumbs-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+    width: 33.33%;
+  }
+  
+  .crt-vplaylist-highlight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .crt-vplaylist-highlight .crt-play,
+  .crt-vplaylist-highlight .crt-pause {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .crt-vplaylist-heading {
+    max-width: 80%;
+    padding: 8px 20px;
+  }
+  
+  .crt-vplaylist-current-title {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+  
+  .crt-vplaylist-heading span {
+    display: block;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 7px;
+  }
+  
+  .crt-vplaylist-controller {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    min-width: 20%;
+  }
+  
+  .crt-vplaylist-controller svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    stroke: white;
+    cursor: pointer;
+  }
+  
+  .crt-vplaylist-controller .crt-pause {
+    display: none;
+  }
+  
+  .crt-vplaylist-thumbs {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: #bfbfbf4d #ffffff26;
+    scrollbar-width: thin;
+  }
+  
+  .crt-vplaylist-thumbs ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    padding: 0;
+    max-height: auto;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .crt-vplaylist-thumbs li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 10px 20px;
+    cursor: pointer;
+    max-width: 100%; /* Ensure the width matches the thumbnail size */
+  }
+  
+  .crt-vplaylist-thumbs ul img {
+    width: 125px; /* Makes the image responsive within the list item */
+    height: 100%;
+    margin-right: 12px;
+  }
+  
+  .crt-vplaylist-info span {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .crt-vplaylist-heading {
+        padding: 7px 10px;
+    }
+    .crt-vplaylist-heading span,
+    .crt-vplaylist-current-title {
+        margin-bottom: 0;
+    }
+    .crt-vplaylist-controller svg {
+        width: 20px;
+        height: 20px;
+    }
+    .crt-vplaylist-thumbs li {
+        padding: 10px;
+    }
+    .crt-vplaylist-thumbs ul img {
+        width: 90px;
+        margin-right: 10px;
+    }
+    .crt-vplaylist-info-title {
+        margin-bottom: 2px;
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    .crt-vplaylist-info span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .crt-vplaylist-wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .crt-vplaylist-wrap .video-player-wrap {
+        -webkit-box-flex: 1;
+            -ms-flex: auto;
+                flex: auto;
+        width: 100%;
+    }
+    .crt-vplaylist-thumbs-wrap {
+        -webkit-box-flex: 1;
+            -ms-flex: auto;
+                flex: auto;
+        width: 100%;
+        height: 300px;
+    }
+    .crt-vplaylist-heading {
+        padding: 15px;
+    }
+    .crt-vplaylist-controller {
+        min-width: 15%;
+    }
+    .crt-vplaylist-controller svg {
+        width: 22px;
+        height: 22px;
+    }
+    .crt-vplaylist-thumbs li {
+        padding: 15px;
+    }
+    .crt-vplaylist-thumbs ul img {
+        width: 120px;
+        margin-right: 10px;
+    }
+}
+
+/* Icon Animations */
+.crt-icon-animation-horizontal .crt-image-scroll-icon {
+    -webkit-animation-name: crtIconHorizontal;
+            animation-name: crtIconHorizontal;
+}
+
+.crt-icon-animation-vertical .crt-image-scroll-icon {
+    -webkit-animation-name: crtIconVertical;
+            animation-name: crtIconVertical;
+}
+
+/* Icon Animations */
+.crt-icon-animation-horizontal .crt-image-scroll-icon {
+    -webkit-animation-name: crtIconHorizontal;
+            animation-name: crtIconHorizontal;
+}
+
+.crt-icon-animation-vertical .crt-image-scroll-icon {
+    -webkit-animation-name: crtIconVertical;
+            animation-name: crtIconVertical;
+}
+
+@-webkit-keyframes crtIconHorizontal {
+    0% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+    50% {
+        -webkit-transform: translate(calc(-50% + 10px), -50%);
+                transform: translate(calc(-50% + 10px), -50%);
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes crtIconHorizontal {
+    0% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+    50% {
+        -webkit-transform: translate(calc(-50% + 10px), -50%);
+                transform: translate(calc(-50% + 10px), -50%);
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+}
+
+@-webkit-keyframes crtIconVertical {
+    0% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+    50% {
+        -webkit-transform: translate(-50%, calc(-50% + 10px));
+                transform: translate(-50%, calc(-50% + 10px));
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes crtIconVertical {
+    0% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+    50% {
+        -webkit-transform: translate(-50%, calc(-50% + 10px));
+                transform: translate(-50%, calc(-50% + 10px));
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+}

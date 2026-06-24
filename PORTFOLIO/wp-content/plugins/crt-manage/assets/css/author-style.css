@@ -1,0 +1,25 @@
+
+.widget-inside ul {
+	padding: 0 !important;
+	margin: 5px 0 !important;
+}
+.widget-inside ul li::marker {
+	content: none !important;
+}
+.crt-manage-widget-author__wrap {
+}
+.crt-manage-widget-author__center {
+	text-align: center;
+}
+.widget ol.author-socials li, .widget ul.author-socials li {
+	border: none !important;
+	padding: 0;
+}
+.crt-manage-widget-author__wrap.crt-manage-widget-author__center img {
+	margin: 0 auto 10px;
+	border-radius: 50%;
+	border: 1px solid;
+}
+.crt-manage-widget-author__wrap h3 {
+	text-transform: capitalize;
+}

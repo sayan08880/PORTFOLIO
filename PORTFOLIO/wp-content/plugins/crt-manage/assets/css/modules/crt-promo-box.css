@@ -1,0 +1,271 @@
+
+.crt-promo-box {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.crt-promo-box-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.crt-promo-box-style-cover .crt-promo-box-image,
+.crt-promo-box-style-pro-cs .crt-promo-box-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.crt-promo-box-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.crt-promo-box-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 15;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+}
+
+.crt-promo-box-content {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.elementor-widget-crt-promo-box.crt-promo-box-style-classic .crt-promo-box-content {
+    background-color: #212121;
+}
+
+.elementor-widget-crt-promo-box.crt-promo-box-style-classic .crt-promo-box:hover .crt-promo-box-content {
+    background-color: #ddb34f;
+}
+
+.crt-promo-box-image-position-right .crt-promo-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.crt-promo-box-image-position-center .crt-promo-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 640px) {
+    .crt-promo-box-style-classic .crt-promo-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .crt-promo-box-style-classic .crt-promo-box-image {
+        min-width: auto !important;
+    }
+}
+
+.crt-promo-box-link {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 40;
+}
+
+.crt-promo-box-btn {
+    display: inline-block;
+}
+
+.crt-promo-box-icon,
+.crt-promo-box-title,
+.crt-promo-box-description,
+.crt-promo-box-btn-wrap {
+    width: 100%;
+}
+
+.crt-promo-box-btn-icon {
+    margin-left: 5px;
+}
+
+.crt-promo-box-icon img {
+    display: inline-block;
+}
+
+.elementor .elementor-widget-crt-promo-box .crt-promo-box:hover .crt-promo-box-bg-image {
+    -webkit-filter: brightness( 100%) contrast( 100%) saturate( 100%) hue-rotate( 0deg);
+    filter: brightness( 100%) contrast( 100%) saturate( 100%) hue-rotate( 0deg);
+}
+
+
+/* Promo box Badge */
+.crt-promo-box-badge {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    z-index: 35;
+}
+
+.crt-promo-box-badge-left {
+    left: 0;
+    right: auto;
+}
+
+.crt-promo-box-badge-right {
+    left: auto;
+    right: 0;
+}
+
+.crt-promo-box-badge-corner {
+    top: 0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.crt-promo-box-badge-corner .crt-promo-box-badge-inner {
+    width: 200%;
+}
+
+.crt-promo-box-badge-corner.crt-promo-box-badge-right {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.crt-promo-box-badge-cyrcle {
+    top: 0;
+}
+
+.crt-promo-box-badge-cyrcle.crt-promo-box-badge-left {
+    -webkit-transform: translateX(-40%) translateY(-40%);
+    -ms-transform: translateX(-40%) translateY(-40%);
+    transform: translateX(-40%) translateY(-40%);
+}
+
+.crt-promo-box-badge-cyrcle.crt-promo-box-badge-right {
+    -webkit-transform: translateX(40%) translateY(-40%);
+    -ms-transform: translateX(40%) translateY(-40%);
+    transform: translateX(40%) translateY(-40%);
+}
+
+.crt-promo-box-badge-cyrcle .crt-promo-box-badge-inner {
+    border-radius: 100%;
+}
+
+.crt-promo-box-badge-flag {
+    border-right: 5px;
+}
+
+.crt-promo-box-badge-flag.crt-promo-box-badge-left {
+    margin-left: -10px;
+}
+
+.crt-promo-box-badge-flag.crt-promo-box-badge-right {
+    margin-right: -10px;
+}
+
+.crt-promo-box-badge-flag:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top-style: solid;
+    border-top-width: 10px;
+}
+
+.crt-promo-box-badge-flag .crt-promo-box-badge-inner {
+    position: relative;
+    z-index: 2;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.crt-promo-box-badge-flag.crt-promo-box-badge-left:before {
+    left: 5px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.crt-promo-box-badge-flag.crt-promo-box-badge-right:before {
+    right: -5px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.crt-promo-box-badge-flag.crt-promo-box-badge-left .crt-promo-box-badge-inner {
+    border-bottom-right-radius: 3px;
+}
+
+.crt-promo-box-badge-flag.crt-promo-box-badge-right .crt-promo-box-badge-inner {
+    border-bottom-left-radius: 3px;
+}
+
+
+/* Defaults */
+.elementor-widget-crt-promo-box .crt-promo-box-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.elementor-widget-crt-promo-box .crt-promo-box-description {
+    font-size: 15px;
+}
+
+.elementor-widget-crt-promo-box .crt-promo-box-btn,
+.elementor-widget-crt-promo-box .crt-promo-box-badge {
+    font-size: 14px;
+}
+
+.elementor-widget-crt-promo-box .crt-promo-box-badge .crt-promo-box-badge-inner {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.elementor-widget-crt-promo-box .crt-promo-box-badge-corner .crt-promo-box-badge-inner {
+    line-height: 1.6;
+}
+

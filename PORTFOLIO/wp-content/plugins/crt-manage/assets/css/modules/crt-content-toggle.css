@@ -1,0 +1,192 @@
+.crt-switcher-container {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.crt-switcher-wrap {
+    position: relative;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.crt-switcher {
+    position: relative;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.crt-switcher-inner {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.crt-switcher-label-style-outer>.elementor-widget-container>.crt-content-toggle>.crt-switcher-container>.crt-switcher-first {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.crt-switcher-label-style-outer>.crt-content-toggle>.crt-switcher-container>.crt-switcher-first {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.crt-switcher-label-style-outer>.elementor-widget-container>.crt-content-toggle>.crt-switcher-container>.crt-switcher-second {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.crt-switcher-label-style-outer>.crt-content-toggle>.crt-switcher-container>.crt-switcher-second {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.crt-switcher-icon-position-left>.elementor-widget-container>.crt-content-toggle>.crt-switcher-container>.crt-switcher-inner>.crt-switcher-icon,
+.crt-switcher-icon-position-left>.elementor-widget-container>.crt-content-toggle>.crt-switcher-container>.crt-switcher-outer>.crt-switcher-wrap>.crt-switcher>.crt-switcher-inner>.crt-switcher-icon {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
+.crt-switcher-icon-position-left>.crt-content-toggle>.crt-switcher-container>.crt-switcher-inner>.crt-switcher-icon,
+.crt-switcher-icon-position-left>.crt-content-toggle>.crt-switcher-container>.crt-switcher-outer>.crt-switcher-wrap>.crt-switcher>.crt-switcher-inner>.crt-switcher-icon {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.crt-switcher-icon-position-left>.elementor-widget-container>.crt-content-toggle>.crt-switcher-container>.crt-switcher-inner>.crt-switcher-label,
+.crt-switcher-icon-position-left>.elementor-widget-container>.crt-content-toggle>.crt-switcher-container>.crt-switcher-outer>.crt-switcher-wrap>.crt-switcher>.crt-switcher-inner>.crt-switcher-label {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+.crt-switcher-icon-position-left>.crt-content-toggle>.crt-switcher-container>.crt-switcher-inner>.crt-switcher-label,
+.crt-switcher-icon-position-left>.crt-content-toggle>.crt-switcher-container>.crt-switcher-outer>.crt-switcher-wrap>.crt-switcher>.crt-switcher-inner>.crt-switcher-label {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.crt-switcher-content-wrap {
+    position: relative;
+    width: 100%;
+    -webkit-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+    -webkit-transition-timing-function: cubic-bezier(0.5, 0.9, 0.6, 0.95);
+    -o-transition-timing-function: cubic-bezier(0.5, 0.9, 0.6, 0.95);
+    transition-timing-function: cubic-bezier(0.5, 0.9, 0.6, 0.95);
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.crt-switcher-content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.crt-switcher-content-active {
+    position: relative;
+    z-index: 100;
+}
+
+.crt-switcher-content-inner {
+    opacity: 0;
+}
+
+.crt-switcher-content-inner p,
+.crt-switcher-content-inner * {
+    margin-bottom: 0;
+}
+
+.crt-switcher-content-active .crt-switcher-content-inner.crt-overlay-none {
+    opacity: 1;
+}
+
+
+/* Switcher Bg */
+
+.crt-switcher-bg {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    -o-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+}
+
+
+/* Dual Switcher */
+
+.crt-switcher-style-dual.crt-switcher-label-style-outer>.elementor-widget-container>.crt-content-toggle>.crt-switcher-container[data-active-switcher*="1"] .crt-switcher-bg {
+    left: 0;
+}
+.crt-switcher-style-dual.crt-switcher-label-style-outer>.crt-content-toggle>.crt-switcher-container[data-active-switcher*="1"] .crt-switcher-bg {
+    left: 0;
+}
+
+.crt-switcher-style-dual.crt-switcher-label-style-outer>.elementor-widget-container>.crt-content-toggle>.crt-switcher-container[data-active-switcher*="2"] .crt-switcher-bg {
+    left: 100%;
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+.crt-switcher-style-dual.crt-switcher-label-style-outer>.crt-content-toggle>.crt-switcher-container[data-active-switcher*="2"] .crt-switcher-bg {
+    left: 100%;
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+

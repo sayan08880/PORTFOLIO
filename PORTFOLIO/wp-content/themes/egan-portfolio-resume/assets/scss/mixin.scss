@@ -1,0 +1,65 @@
+@mixin hover-shadow() {
+
+}
+@mixin icon_post_format($icon, $font-size : 42px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before {
+    content: $icon;
+    font-family: "Font Awesome 6 Free";
+    color: #FFF;
+    font-size: $font-size;
+    position: absolute;
+  }
+}
+
+@mixin btn-default($color, $size : small) {
+  @if $size == small {
+    padding: 12px 40px;
+    font-size: 16px;
+  } @elseif $size == medium {
+    padding: 15px 45px;
+    font-size: 18px;
+  } @elseif $size == large {
+    padding: 20px 50px;
+    font-size: 20px;
+  }
+  display: inline-block;
+  position: relative;
+  background-color: $color;
+  color: #FFF;
+  border-radius: 5px;
+  font-family: var(--heading-font);
+  overflow: hidden;
+  &:hover {
+    text-decoration: none;
+    &:after {
+      width: 10px;
+      -moz-transform: rotate(5deg);
+      -o-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+      transform: rotate(5deg);
+    }
+  }
+  &:after {
+    content: '';
+    height: 100%;
+    width: 20px;
+    background-color: #FFF;
+    opacity: 0.2;
+    position: absolute;
+    bottom: -2px;
+    right: -12px;
+    -moz-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    transform: rotate(13deg);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+}

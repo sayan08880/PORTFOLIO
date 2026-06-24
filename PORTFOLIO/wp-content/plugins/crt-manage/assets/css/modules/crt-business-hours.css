@@ -1,0 +1,60 @@
+.crt-business-hours {
+    overflow: hidden;
+}
+
+.crt-business-hours-item {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+}
+
+.crt-business-day {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    text-align: left;
+}
+
+.elementor-widget-crt-business-hours .crt-business-hours .crt-business-day,
+.elementor-widget-crt-business-hours .crt-business-hours .crt-business-time,
+.elementor-widget-crt-business-hours .crt-business-hours .crt-business-closed {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.crt-business-time,
+.crt-business-closed {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    text-align: right;
+}
+
+.crt-business-hours-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.crt-business-hours-item:last-of-type:after {
+    display: none;
+}
+
+
+/* Defaults */
+
+.elementor-widget-crt-business-hours .crt-business-day,
+.elementor-widget-crt-business-hours .crt-business-time,
+.elementor-widget-crt-business-hours .crt-business-closed {
+    font-weight: 500;
+}

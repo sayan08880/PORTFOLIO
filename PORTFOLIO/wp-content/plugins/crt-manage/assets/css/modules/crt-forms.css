@@ -1,0 +1,544 @@
+
+.crt-forms-container .wpcf7-form .wpcf7-form-control-wrap {
+    display: block !important;
+}
+
+.wpcf7 label,
+.wpcf7-quiz-label {
+    width: 100%;
+}
+
+.crt-forms-container .wpcf7 p {
+    margin-bottom: 0;
+}
+
+.crt-forms-container .wpcf7-form .ajax-loader {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.crt-forms-container .wpcf7-select,
+.crt-forms-container .wpcf7-number,
+.crt-forms-container .wpcf7-date,
+.crt-forms-container select.wpforms-field-medium,
+.crt-forms-container .nf-field-container select,
+.crt-forms-container .caldera-grid select.form-control {
+    padding: 7px 10px !important;
+}
+
+.crt-forms-container .wpcf7-date {
+    width: auto !important;
+}
+
+.crt-forms-container .wpcf7-number {
+    width: 100px !important;
+}
+
+.crt-forms-container .wpcf7-form .wpcf7-submit {
+    display: block;
+}
+
+.crt-forms-container .wpcf7-form-control.wpcf7-checkbox .wpcf7-list-item,
+.crt-forms-container .wpcf7-form-control.wpcf7-radio .wpcf7-list-item,
+.crt-forms-container .wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.crt-forms-container .wpcf7-response-output {
+    clear: both;
+    margin: 0;
+}
+
+.crt-forms-container .wpforms-field:not(.wpforms-field-address) .wpforms-field-medium {
+    display: inline-block !important;
+    max-width: 100% !important;
+}
+
+.crt-forms-container .wpforms-field-phone,
+.crt-forms-container .wpforms-field-address,
+.crt-forms-container .wpforms-page-indicator {
+    display: inline-block;
+}
+
+.crt-forms-container .wpforms-field-address .wpforms-field-medium {
+    max-width: 100% !important;
+}
+
+.crt-forms-container .intl-tel-input.allow-dropdown input.wpforms-field-medium,
+.crt-forms-container .wpforms-field-address div.wpforms-field-medium {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.crt-forms-container .intl-tel-input.allow-dropdown {
+    display: inline-block !important;
+    max-width: 100% !important;
+}
+
+.crt-forms-align-left .crt-forms-container div.wpforms-container-full .wpforms-form .wpforms-list-inline ul li:last-child {
+    margin-right: 0 !important;
+}
+
+.crt-forms-container .wpcf7-mail-sent-ok,
+.crt-forms-container .wpforms-confirmation-container-full,
+.crt-forms-container .nf-response-msg,
+.crt-forms-container .caldera-grid .alert-success {
+    padding: 10px 15px;
+    border: 2px solid;
+}
+
+.crt-forms-container label.wpforms-error a {
+    text-decoration: underline;
+}
+
+.crt-forms-container .wpforms-smart-phone-field {
+    text-indent: 0 !important;
+}
+
+.crt-forms-container select.ninja-forms-field {
+    line-height: 1 !important;
+}
+
+.crt-forms-container .nf-form-wrap .checkbox-wrap label {
+    display: inline-block !important;
+}
+
+.crt-forms-container .nf-form-wrap .starrating .stars {
+    display: inline-block;
+}
+
+.crt-forms-submit-center .wpcf7-submit,
+.crt-forms-submit-center .wpforms-submit,
+.crt-forms-submit-center .wpforms-page-next,
+.crt-forms-submit-center .wpforms-page-previous,
+.crt-forms-submit-center .submit-wrap .ninja-forms-field,
+.crt-forms-submit-center .caldera-grid .btn-default:not(a) {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.crt-forms-submit-left .wpcf7-submit,
+.crt-forms-submit-left .wpforms-submit,
+.crt-forms-submit-left .wpforms-page-next,
+.crt-forms-submit-left .wpforms-page-previous,
+.crt-forms-submit-left .submit-wrap .ninja-forms-field,
+.crt-forms-submit-left .caldera-grid .btn-default:not(a) {
+    float: left !important;
+}
+
+.crt-forms-submit-right .wpcf7-submit,
+.crt-forms-submit-right .wpforms-submit,
+.crt-forms-submit-right .wpforms-page-next,
+.crt-forms-submit-right .wpforms-page-previous,
+.crt-forms-submit-right .submit-wrap .ninja-forms-field,
+.crt-forms-submit-left .caldera-grid .btn-default:not(a) {
+    float: right !important;
+}
+
+.crt-forms-submit-justify .wpcf7-submit,
+.crt-forms-submit-justify .wpforms-submit,
+.crt-forms-submit-justify .wpforms-page-next,
+.crt-forms-submit-justify .wpforms-page-previous,
+.crt-forms-submit-justify .submit-wrap .ninja-forms-field,
+.crt-forms-submit-justify .caldera-grid .btn-default:not(a) {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.crt-custom-chk-radio .wpcf7-checkbox input,
+.crt-custom-chk-radio .wpcf7-radio input,
+.crt-custom-chk-radio .wpcf7-acceptance input,
+.crt-custom-chk-radio .wpforms-field-radio input,
+.crt-custom-chk-radio .wpforms-field-checkbox input,
+.crt-custom-chk-radio .wpforms-field-gdpr-checkbox input {
+    display: none !important;
+}
+
+.crt-custom-chk-radio .wpcf7-checkbox .wpcf7-list-item-label,
+.crt-custom-chk-radio .wpcf7-radio .wpcf7-list-item-label,
+.crt-custom-chk-radio .wpcf7-acceptance .wpcf7-list-item-label,
+.crt-custom-chk-radio .wpforms-field-checkbox input+label,
+.crt-custom-chk-radio .wpforms-field-gdpr-checkbox input+label,
+.crt-custom-chk-radio .wpforms-field-radio input+label,
+.crt-custom-chk-radio .wpforms-field-radio input+span {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.crt-custom-chk-radio .wpcf7-checkbox .wpcf7-list-item-label:before,
+.crt-custom-chk-radio .wpcf7-radio .wpcf7-list-item-label:before,
+.crt-custom-chk-radio .wpcf7-acceptance .wpcf7-list-item-label:before,
+.crt-custom-chk-radio .wpforms-field-checkbox input+label:before,
+.crt-custom-chk-radio .wpforms-field-gdpr-checkbox input+label:before,
+.crt-custom-chk-radio .wpforms-field-radio input+label:before,
+.crt-custom-chk-radio .wpforms-field-radio input:not(.wpforms-screen-reader-element)+span:before {
+    content: "\2714";
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    text-align: center;
+    border: 1px solid;
+    margin-right: 5px;
+    color: transparent;
+}
+
+.crt-forms-align-right .wpforms-field-checkbox ul li input:first-child,
+.crt-forms-align-right .wpforms-field-radio ul li input:first-child,
+.crt-forms-align-right .wpforms-image-choices label input:first-of-type,
+.crt-forms-align-right .wpforms-field-gdpr-checkbox input:first-child {
+    float: right;
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+}
+
+.crt-forms-align-right .crt-forms-container,
+.crt-forms-align-right .crt-forms-container .wpcf7-form-control {
+    direction: rtl;
+}
+
+.crt-forms-align-right .nf-form-wrap .field-wrap {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.crt-forms-align-right .label-right .nf-field-description {
+    margin-right: 0 !important;
+}
+
+.crt-forms-align-right .nf-error.field-wrap .nf-field-element:after {
+    right: auto !important;
+    left: 1px !important;
+}
+
+.crt-forms-align-right .crt-custom-chk-radio .wpcf7-checkbox .wpcf7-list-item-label:before,
+.crt-forms-align-right .crt-custom-chk-radio .wpcf7-radio .wpcf7-list-item-label:before,
+.crt-forms-align-right .crt-custom-chk-radio .wpcf7-acceptance .wpcf7-list-item-label:before,
+.crt-forms-align-right .crt-custom-chk-radio .wpforms-field-checkbox input+label:before,
+.crt-forms-align-right .crt-custom-chk-radio .wpforms-field-gdpr-checkbox input+label:before,
+.crt-forms-align-right .crt-custom-chk-radio .wpforms-field-radio input+label:before,
+.crt-forms-align-right .crt-custom-chk-radio .wpforms-field-radio input:not(.wpforms-screen-reader-element)+span:before {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.crt-forms-align-right .wpcf7-list-item.last,
+.crt-forms-align-right .wpcf7-acceptance .wpcf7-list-item,
+.crt-forms-align-right div.wpforms-container-full .wpforms-form .wpforms-list-inline ul li:first-child {
+    margin-right: 0 !important;
+}
+
+.crt-forms-align-right .crt-forms-container .intl-tel-input .flag-container {
+    left: auto !important;
+    right: 0 !important;
+}
+
+.crt-forms-align-right .caldera-grid .col-sm-4,
+.crt-forms-align-right .caldera-grid .col-sm-6 {
+    float: right;
+}
+
+.crt-forms-align-right .crt-forms-container .caldera-grid .checkbox label,
+.crt-forms-align-right .crt-forms-container .caldera-grid .checkbox-inline label,
+.crt-forms-align-right .crt-forms-container .caldera-grid .radio label {
+    padding-left: 0 !important;
+    padding-right: 20px;
+}
+
+.crt-forms-align-right .crt-forms-container .caldera-grid .checkbox input,
+.crt-forms-align-right .crt-forms-container .caldera-grid .radio input {
+    margin-right: -20px !important;
+    margin-left: 0 !important;
+}
+
+.crt-forms-align-right .crt-forms-container .caldera-grid .cf-credit-card {
+    background-position: 99% center !important;
+}
+
+.crt-forms-align-right .crt-forms-container .caldera-grid .live-gravatar {
+    text-align: right !important;
+}
+
+.crt-forms-align-left .crt-forms-container .caldera-grid .live-gravatar {
+    text-align: left !important;
+}
+
+.crt-forms-container .nf-form-content {
+    padding: 0;
+    max-width: none;
+}
+
+.crt-forms-container .nf-form-content .label-above .field-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.crt-forms-container .nf-form-content .label-above .nf-field-label {
+    margin-top: 0;
+}
+
+.crt-forms-container .field-wrap:not(.textarea-wrap):not(.submit-wrap) .ninja-forms-field {
+    border-radius: 0;
+}
+
+.crt-forms-container .field-wrap.textarea-wrap .ninja-forms-field {
+    display: block;
+}
+
+.crt-forms-container .field-wrap.submit-wrap .ninja-forms-field {
+    cursor: pointer;
+}
+
+.crt-forms-container .listselect-wrap>div select.ninja-forms-field {
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menulist;
+}
+
+.crt-forms-container .nf-form-content .list-select-wrap .nf-field-element>div,
+.crt-forms-container .nf-form-content input:not([type=button]),
+.crt-forms-container .nf-form-content textarea {
+    background: transparent;
+    border: none;
+}
+
+.crt-forms-container .checkbox-container.label-right .field-wrap {
+    display: block;
+}
+
+.crt-forms-container .listradio-wrap ul li,
+.crt-forms-container .listcheckbox-wrap ul li {
+    display: inline-block;
+    margin-right: 10px !important;
+    margin-bottom: 7px !important;
+}
+
+.crt-forms-container .listcheckbox-container .nf-field-element label:after {
+    top: 1px;
+}
+
+.crt-forms-container .listradio-wrap .nf-field-element label {
+    margin-left: 25px !important;
+}
+
+.crt-forms-container .listradio-wrap .nf-field-element label:after {
+    top: 0;
+    left: -25px;
+}
+
+.crt-forms-container .listradio-wrap .nf-field-element label.nf-checked-label:before {
+    top: 4px;
+    left: -21px;
+}
+
+.crt-forms-container .listradio-wrap label,
+.crt-forms-container .checkbox-wrap label,
+.crt-forms-container .listcheckbox-wrap label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.crt-forms-container .nf-error.field-wrap .nf-field-element:after {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: auto !important;
+}
+
+.crt-forms-container .wpforms-form .wpforms-field,
+.crt-forms-container .wpforms-submit-container {
+    padding: 0 !important;
+}
+
+.crt-forms-container .wpforms-container,
+.crt-forms-container div.wpforms-container-full .wpforms-form .wpforms-field-row,
+.crt-forms-container .wpforms-field-address .wpforms-field-row:nth-last-child(2) {
+    margin-bottom: 0 !important;
+}
+
+.crt-forms-container .wpforms-submit-container:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.crt-forms-container .caldera-grid .help-block {
+    margin-bottom: 0;
+}
+
+.crt-forms-container .caldera-grid .caldera-forms-gdpr-field-label a {
+    text-decoration: underline;
+}
+
+.crt-forms-container .caldera-grid .intl-tel-input input {
+    text-indent: 40px;
+}
+
+.crt-forms-container .caldera-grid input.cf-credit-card {
+    text-indent: 33px;
+}
+
+.crt-forms-container .caldera-grid .cf-credit-card {
+    background-position: 5px center !important;
+}
+
+.crt-forms-container .cf2-dropzone .form-control {
+    height: auto;
+}
+
+.crt-forms-container .caldera-grid .form-group input,
+.crt-forms-container .caldera-grid .form-group textarea {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.crt-forms-container .caldera-grid .has-error .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.crt-forms-container .caldera-grid .alert-success {
+    text-shadow: none;
+}
+
+
+/* Defaults */
+
+.elementor-widget-crt-forms .wpforms-head-container .wpforms-title,
+.elementor-widget-crt-forms .nf-form-title h3 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.elementor-widget-crt-forms .wpforms-head-container .wpforms-description,
+.elementor-widget-crt-forms .nf-form-fields-required {
+    font-size: 14px;
+}
+
+.elementor-widget-crt-forms .wpcf7-form,
+.elementor-widget-crt-forms .nf-field-container label,
+.elementor-widget-crt-forms .wpforms-field-label,
+.elementor-widget-crt-forms .wpforms-image-choices-label,
+.elementor-widget-crt-forms .wpforms-field-label-inline,
+.elementor-widget-crt-forms .wpforms-captcha-question,
+.elementor-widget-crt-forms .wpforms-captcha-equation,
+.elementor-widget-crt-forms .wpforms-payment-total,
+.elementor-widget-crt-forms .caldera-grid .control-label,
+.elementor-widget-crt-forms .caldera-forms-summary-field ul li,
+.elementor-widget-crt-forms .caldera-grid .total-line,
+.elementor-widget-crt-forms .caldera-grid .checkbox label,
+.elementor-widget-crt-forms .caldera-grid .radio label,
+.elementor-widget-crt-forms .caldera-grid .caldera-forms-gdpr-field-label,
+.elementor-widget-crt-forms .crt-forms-container .wpforms-confirmation-container-full,
+.elementor-widget-crt-forms .crt-forms-container .nf-response-msg {
+    font-size: 14px;
+}
+
+.elementor-widget-crt-forms .wpcf7-text,
+.elementor-widget-crt-forms .wpcf7-textarea,
+.elementor-widget-crt-forms .wpcf7-date,
+.elementor-widget-crt-forms .wpcf7-number,
+.elementor-widget-crt-forms .wpcf7-select,
+.elementor-widget-crt-forms .wpcf7-quiz,
+.elementor-widget-crt-forms .ninja-forms-field,
+.elementor-widget-crt-forms .wpforms-form input[type=date],
+.elementor-widget-crt-forms .wpforms-form input[type=datetime],
+.elementor-widget-crt-forms .wpforms-form input[type=datetime-local],
+.elementor-widget-crt-forms .wpforms-form input[type=email],
+.elementor-widget-crt-forms .wpforms-form input[type=month],
+.elementor-widget-crt-forms .wpforms-form input[type=number],
+.elementor-widget-crt-forms .wpforms-form input[type=password],
+.elementor-widget-crt-forms .wpforms-form input[type=range],
+.elementor-widget-crt-forms .wpforms-form input[type=search],
+.elementor-widget-crt-forms .wpforms-form input[type=tel],
+.elementor-widget-crt-forms .wpforms-form input[type=text],
+.elementor-widget-crt-forms .wpforms-form input[type=time],
+.elementor-widget-crt-forms .wpforms-form input[type=url],
+.elementor-widget-crt-forms .wpforms-form input[type=week],
+.elementor-widget-crt-forms .wpforms-form select,
+.elementor-widget-crt-forms .wpforms-form textarea,
+.elementor-widget-crt-forms .caldera-grid .form-control[type=text],
+.elementor-widget-crt-forms .caldera-grid .form-control[type=email],
+.elementor-widget-crt-forms .caldera-grid .form-control[type=tel],
+.elementor-widget-crt-forms .caldera-grid .form-control[type=phone],
+.elementor-widget-crt-forms .caldera-grid .form-control[type=number],
+.elementor-widget-crt-forms .caldera-grid .form-control[type=url],
+.elementor-widget-crt-forms .caldera-grid .form-control[type=color_picker],
+.elementor-widget-crt-forms .caldera-grid .form-control[type=credit_card_cvc],
+.elementor-widget-crt-forms .caldera-grid select.form-control,
+.elementor-widget-crt-forms .caldera-grid textarea.form-control {
+    font-size: 13px;
+    letter-spacing: 0.2px;
+}
+
+.elementor-widget-crt-forms .wpcf7-submit,
+.elementor-widget-crt-forms .submit-wrap .ninja-forms-field,
+.elementor-widget-crt-forms .submit-wrap .ninja-forms-field,
+.elementor-widget-crt-forms .wpforms-submit,
+.elementor-widget-crt-forms .wpforms-page-next,
+.elementor-widget-crt-forms .wpforms-page-previous,
+.elementor-widget-crt-forms .caldera-grid .btn-default,
+.elementor-widget-crt-forms .caldera-grid .cf2-dropzone button {
+    background-color: #605BE5;
+}
+
+.elementor-widget-crt-forms .wpcf7-submit:hover,
+.elementor-widget-crt-forms .submit-wrap .ninja-forms-field:hover,
+.elementor-widget-crt-forms .wpforms-submit:hover,
+.elementor-widget-crt-forms .wpforms-page-next:hover,
+.elementor-widget-crt-forms .wpforms-page-previous:hover,
+.elementor-widget-crt-forms .caldera-grid .btn-default:hover,
+.elementor-widget-crt-forms .caldera-grid .btn-success,
+.elementor-widget-crt-forms .caldera-grid .cf2-dropzone button:hover {
+    background-color: #4A45D2;
+}
+
+.elementor-widget-crt-forms .crt-forms-container .wpcf7-not-valid-tip,
+.elementor-widget-crt-forms .crt-forms-container .wpcf7-response-output,
+.elementor-widget-crt-forms .crt-forms-container label.wpforms-error,
+.elementor-widget-crt-forms .crt-forms-container .caldera_ajax_error_block,
+.elementor-widget-crt-forms .crt-forms-container .nf-error-msg {
+    font-size: 14px;
+}
+
+.elementor-widget-crt-forms .wpcf7-form,
+.elementor-widget-crt-forms .nf-field-container label,
+.elementor-widget-crt-forms .wpforms-field-label,
+.elementor-widget-crt-forms .wpforms-image-choices-label,
+.elementor-widget-crt-forms .wpforms-field-label-inline,
+.elementor-widget-crt-forms .wpforms-captcha-question,
+.elementor-widget-crt-forms .wpforms-captcha-equation,
+.elementor-widget-crt-forms .wpforms-payment-total,
+.elementor-widget-crt-forms .caldera-grid .control-label,
+.elementor-widget-crt-forms .caldera-forms-summary-field ul li,
+.elementor-widget-crt-forms .caldera-grid .total-line,
+.elementor-widget-crt-forms .caldera-grid .checkbox label,
+.elementor-widget-crt-forms .caldera-grid .radio label,
+.elementor-widget-crt-forms .caldera-grid .caldera-forms-gdpr-field-label,
+.elementor-widget-crt-forms .crt-forms-container .wpforms-confirmation-container-full,
+.elementor-widget-crt-forms .crt-forms-container .nf-response-msg {
+    font-weight: normal;
+}
+
+.elementor-widget-crt-forms.nf-field-description,
+.elementor-widget-crt-forms.wpforms-field-sublabel,
+.elementor-widget-crt-forms.wpforms-field-description,
+.elementor-widget-crt-forms.caldera-grid .help-block {
+    font-size: 14px;
+}
+

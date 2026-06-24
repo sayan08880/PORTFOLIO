@@ -1,0 +1,197 @@
+/* Button */
+
+.crt-pricing-table-button {
+    text-align: center;
+    font-size: 17px;
+}
+
+.crt-pricing-table-btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.crt-pricing-table-btn span {
+    position: relative;
+    z-index: 2;
+    opacity: 1 !important;
+}
+
+.crt-pricing-table-btn:before,
+.crt-pricing-table-btn:after {
+    z-index: 1 !important;
+}
+
+
+/* Badge */
+
+.crt-pricing-table-badge {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    z-index: 2;
+}
+
+.elementor-widget-crt-pricing-table .crt-pricing-table-badge .crt-pricing-table-badge-inner {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.crt-pricing-table-badge-left {
+    left: 0;
+    right: auto;
+}
+
+.crt-pricing-table-badge-right {
+    left: auto;
+    right: 0;
+}
+
+.crt-pricing-table-badge-corner {
+    top: 0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.crt-pricing-table-badge-corner .crt-pricing-table-badge-inner {
+    width: 200%;
+}
+
+.crt-pricing-table-badge-corner.crt-pricing-table-badge-right {
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.crt-pricing-table-badge-cyrcle {
+    top: 0;
+}
+
+.crt-pricing-table-badge-cyrcle .crt-pricing-table-badge-inner {
+    border-radius: 100%;
+}
+
+.crt-pricing-table-badge-flag {
+    border-right: 5px;
+}
+
+.crt-pricing-table-badge-flag.crt-pricing-table-badge-left {
+    margin-left: -10px;
+}
+
+.crt-pricing-table-badge-flag.crt-pricing-table-badge-right {
+    margin-right: -10px;
+}
+
+.crt-pricing-table-badge-flag:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top-style: solid;
+    border-top-width: 10px;
+}
+
+.crt-pricing-table-badge-flag .crt-pricing-table-badge-inner {
+    position: relative;
+    z-index: 2;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.crt-pricing-table-badge-flag.crt-pricing-table-badge-left:before {
+    left: 5px;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.crt-pricing-table-badge-flag.crt-pricing-table-badge-right:before {
+    right: -5px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.crt-pricing-table-badge-flag.crt-pricing-table-badge-left .crt-pricing-table-badge-inner {
+    border-bottom-right-radius: 3px;
+}
+
+.crt-pricing-table-badge-flag.crt-pricing-table-badge-right .crt-pricing-table-badge-inner {
+    border-bottom-left-radius: 3px;
+}
+
+
+/* Text */
+.crt-pricing-table-text {
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+
+/* Divider */
+.crt-pricing-table-divider {
+    margin: 0 auto;
+    border: 0;
+}
+
+
+/* Animation */
+.crt-pricing-table-animation-slide {
+    -webkit-transition-property: margin;
+    -o-transition-property: margin;
+    transition-property: margin;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.crt-pricing-table-animation-bounce {
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.crt-pricing-table-animation-slide:hover {
+    margin-top: -5px;
+}
+
+.crt-pricing-table-animation-bounce:hover {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+
+/* Defaults */
+
+.elementor-widget-crt-pricing-table .crt-pricing-table-heading {
+    background-color: #f9f9f9;
+}
+
+.elementor-widget-crt-pricing-table .crt-pricing-table-price {
+    background-color: #605be5;
+}
+
+.elementor-widget-crt-pricing-table .crt-pricing-table-button {
+    background-color: #f9f9f9;
+}
+
+.elementor-widget-crt-pricing-table .crt-pricing-table-btn {
+    background-color: #2B2B2B;
+}
+
+.elementor-widget-crt-pricing-table .crt-pricing-table-btn:hover {
+    background-color: #4A45D2;
+}
+
+.elementor-widget-crt-pricing-table .crt-pricing-table-text {
+    background-color: #f9f9f9;
+}
+

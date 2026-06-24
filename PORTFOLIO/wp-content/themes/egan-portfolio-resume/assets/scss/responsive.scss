@@ -1,0 +1,144 @@
+@media (max-width:1400px) {
+}
+
+@media (max-width:1200px) {
+}
+
+@media (max-width: 992px) {
+  .head {
+    width: 0;
+    .head__inner {
+      width: 300px;
+      transform: translateX(-300px);
+      transition: all .3s ease;
+      .nav-open-js & {
+        transform: translateX(0px);
+      }
+    }
+  }
+  .head-v2 {
+    .head__inner {
+      width: 300px;
+    }
+  }
+  body {
+    &:after {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,.5803921569);
+      transition: opacity .1s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+    &.nav-open-js {
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .w-75 {
+    width: 100% !important;
+  }
+  .grid {
+    .grid__item {
+      &[class*="grid__item-"] {
+        width: 33.333333%;
+      }
+    }
+  }
+  .br-b:after {
+    left: -0.5rem;
+    right: -0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width:576px) {
+  .nav-button-m {
+    right: 15px;
+  }
+  .post-list-large__item--inner .entry__cat-read .entry {
+    padding: 30px;
+  }
+  .post-list-large__item--inner .post-list-large__item--content .post-list-large__title {
+    font-size: 24px;
+  }
+  .post-list-large__item--inner .post-list-large__item--content {
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+  }
+  .post-list-large__sub {
+    display: none;
+  }
+
+  .grid {
+    .grid__item {
+      &[class*="grid__item-"] {
+        width: 100%;
+      }
+    }
+  }
+
+  .breadcrumb-option {
+    display: none;
+  }
+
+  .single-header .single-heading-default__title {
+    font-size: 24px;
+    margin: 15px auto;
+  }
+  .single-detail__left {
+    flex-wrap: wrap;
+  }
+  .single-detail__share {
+    width: 100%;
+    order: 1;
+  }
+  .single-detail__content {
+    width: 100%;
+    order: 0;
+  }
+  .col-12.col-md-4 #secondary {
+    padding-left: 0;
+  }
+  .single-share {
+    margin: 20px 0;
+  }
+  .single-share .single-share__icon ul {
+    flex-direction: row;
+  }
+  #post-progress {
+    margin: 0;
+  }
+  .post_navigation_thumb {
+    flex-wrap: wrap;
+  }
+  .post_navigation_thumb__item.w-50 {
+    margin: 15px 0;
+    width: 100% !important;
+  }
+  .has-drop-cap:not(:focus):first-letter {
+    font-size: 3.4em;
+  }
+  .project__list .project__item {
+    width: 100%;
+  }
+  .heading-default {
+    .heading-default__title {
+      font-size: 36px;
+    }
+    .heading-default__sub {
+      padding: 0 0 5px;
+    }
+  }
+}

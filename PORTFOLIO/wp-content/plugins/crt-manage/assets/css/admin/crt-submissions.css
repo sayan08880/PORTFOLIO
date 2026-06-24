@@ -1,0 +1,76 @@
+#crt_submission_fields .crt-submissions-wrap {
+	margin-bottom: 10px;
+}
+
+.crt-submissions-wrap {
+    width: 50%;
+}
+
+.crt-submissions-wrap * {
+    width: 100%;
+}
+
+.crt-submissions-wrap input {
+    display: block;
+}
+
+.crt-submissions-wrap label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.crt-submissions-wrap p {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 !important;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.crt-submissions-wrap .notice-error {
+    background: #f2dede;
+}
+
+.crt-submissions-wrap .notice-success {
+    background: #dff0d8;
+}
+
+.crt-submission-read {
+    opacity: 0.5;
+}
+
+.crt-submission-read,
+.crt-submission-unread {
+    cursor: pointer;
+}
+
+.crt-submissions-meta {
+    font-weight: 600;
+}
+
+.crt-submission-unread-column,
+.crt-submission-unread {
+    font-weight: bold;
+}
+
+#postbox-container-2 {
+    opacity: 0;
+}
+
+.crt-edit-submissions {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.crt-submissions-wrap > *[readonly]:not(p) {
+    border: none;
+}
+
+.crt-inline {
+    display: inline-block !important;
+    width: auto;
+    margin-right: 10px;
+}

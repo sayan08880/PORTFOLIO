@@ -1,0 +1,340 @@
+
+.crt-sharing-buttons .crt-sharing-icon {
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff !important;
+}
+
+.crt-sharing-buttons .crt-sharing-icon i {
+    display: block;
+    text-align: center;
+}
+
+.crt-sharing-label {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.elementor-widget-crt-sharing-buttons.elementor-grid-0 .crt-sharing-buttons,
+.elementor-widget-crt-sharing-buttons[class*="elementor-grid-pro-"] .crt-sharing-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.elementor-widget-crt-sharing-buttons:not(.elementor-grid-0):not(.elementor-grid-pro-3):not(.elementor-grid-pro-4):not(.elementor-grid-pro-5):not(.elementor-grid-pro-6) .crt-sharing-label-off .crt-sharing-icon i {
+    width: 100% !important;
+}
+
+.crt-sharing-buttons.crt-sharing-col-1 .crt-sharing-icon {
+    width: 100%;
+    margin-right: 0 !important;
+}
+
+.crt-sharing-buttons .crt-sharing-icon:last-child,
+.crt-sharing-col-1 .crt-sharing-buttons .crt-sharing-icon,
+.crt-sharing-col-2 .crt-sharing-buttons .crt-sharing-icon:nth-child(2n),
+.crt-sharing-col-3 .crt-sharing-buttons .crt-sharing-icon:nth-child(3n),
+.crt-sharing-col-4 .crt-sharing-buttons .crt-sharing-icon:nth-child(4n),
+.crt-sharing-col-5 .crt-sharing-buttons .crt-sharing-icon:nth-child(5n),
+.crt-sharing-col-6 .crt-sharing-buttons .crt-sharing-icon:nth-child(6n) {
+    margin-right: 0 !important;
+}
+
+.crt-sharing-buttons .crt-sharing-icon {
+    -webkit-transition-property: opacity, border-color;
+    -o-transition-property: opacity, border-color;
+    transition-property: opacity, border-color;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.crt-sharing-buttons .crt-sharing-icon i,
+.crt-sharing-buttons .crt-sharing-icon span {
+    -webkit-transition-property: color, background-color;
+    -o-transition-property: color, background-color;
+    transition-property: color, background-color;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.crt-sharing-official .crt-sharing-icon:hover {
+    opacity: 0.85;
+}
+
+.crt-sharing-official .crt-sharing-facebook-f i,
+.crt-sharing-official .crt-sharing-facebook-f span {
+    background-color: #3b5998;
+}
+
+.crt-sharing-official .crt-sharing-twitter i,
+.crt-sharing-official .crt-sharing-twitter span {
+    background-color: #1da1f2;
+}
+
+.crt-sharing-official .crt-sharing-linkedin-in i,
+.crt-sharing-official .crt-sharing-linkedin-in span {
+    background-color: #0077b5;
+}
+
+.crt-sharing-official .crt-sharing-pinterest-p i,
+.crt-sharing-official .crt-sharing-pinterest-p span {
+    background-color: #bd081c;
+}
+
+.crt-sharing-official .crt-sharing-reddit i,
+.crt-sharing-official .crt-sharing-reddit span {
+    background-color: #ff4500;
+}
+
+.crt-sharing-official .crt-sharing-tumblr i,
+.crt-sharing-official .crt-sharing-tumblr span {
+    background-color: #35465c;
+}
+
+.crt-sharing-official .crt-sharing-digg i,
+.crt-sharing-official .crt-sharing-digg span {
+    background-color: #005be2;
+}
+
+.crt-sharing-official .crt-sharing-xing i,
+.crt-sharing-official .crt-sharing-xing span {
+    background-color: #026466;
+}
+
+.crt-sharing-official .crt-sharing-stumbleupon i,
+.crt-sharing-official .crt-sharing-stumbleupon span {
+    background-color: #eb4924;
+}
+
+.crt-sharing-official .crt-sharing-vk i,
+.crt-sharing-official .crt-sharing-vk span {
+    background-color: #45668e;
+}
+
+.crt-sharing-official .crt-sharing-odnoklassniki i,
+.crt-sharing-official .crt-sharing-odnoklassniki span {
+    background-color: #f4731c;
+}
+
+.crt-sharing-official .crt-sharing-get-pocket i,
+.crt-sharing-official .crt-sharing-get-pocket span {
+    background-color: #ef3f56;
+}
+
+.crt-sharing-official .crt-sharing-skype i,
+.crt-sharing-official .crt-sharing-skype span {
+    background-color: #00aff0;
+}
+
+.crt-sharing-official .crt-sharing-whatsapp i,
+.crt-sharing-official .crt-sharing-whatsapp span {
+    background-color: #25d366;
+}
+
+.crt-sharing-official .crt-sharing-telegram i,
+.crt-sharing-official .crt-sharing-telegram span {
+    background-color: #2ca5e0;
+}
+
+.crt-sharing-official .crt-sharing-delicious i,
+.crt-sharing-official .crt-sharing-delicious span {
+    background-color: #3399ff;
+}
+
+.crt-sharing-official .crt-sharing-envelope i,
+.crt-sharing-official .crt-sharing-envelope span {
+    background-color: #c13B2c;
+}
+
+.crt-sharing-official .crt-sharing-print i,
+.crt-sharing-official .crt-sharing-print span {
+    background-color: #96c859;
+}
+
+.crt-sharing-official .crt-sharing-facebook-f {
+    border-color: #3b5998;
+}
+
+.crt-sharing-official .crt-sharing-twitter {
+    border-color: #1da1f2;
+}
+
+.crt-sharing-official .crt-sharing-linkedin-in {
+    border-color: #0077b5;
+}
+
+.crt-sharing-official .crt-sharing-pinterest-p {
+    border-color: #bd081c;
+}
+
+.crt-sharing-official .crt-sharing-reddit {
+    border-color: #ff4500;
+}
+
+.crt-sharing-official .crt-sharing-tumblr {
+    border-color: #35465c;
+}
+
+.crt-sharing-official .crt-sharing-digg {
+    border-color: #005be2;
+}
+
+.crt-sharing-official .crt-sharing-xing {
+    border-color: #026466;
+}
+
+.crt-sharing-official .crt-sharing-stumbleupon {
+    border-color: #eb4924;
+}
+
+.crt-sharing-official .crt-sharing-vk {
+    border-color: #45668e;
+}
+
+.crt-sharing-official .crt-sharing-odnoklassniki {
+    border-color: #f4731c;
+}
+
+.crt-sharing-official .crt-sharing-get-pocket {
+    border-color: #ef3f56;
+}
+
+.crt-sharing-official .crt-sharing-skype {
+    border-color: #00aff0;
+}
+
+.crt-sharing-official .crt-sharing-whatsapp {
+    border-color: #25d366;
+}
+
+.crt-sharing-official .crt-sharing-telegram {
+    border-color: #2ca5e0;
+}
+
+.crt-sharing-official .crt-sharing-delicious {
+    border-color: #3399ff;
+}
+
+.crt-sharing-official .crt-sharing-envelope {
+    border-color: #c13B2c;
+}
+
+.crt-sharing-official .crt-sharing-print {
+    border-color: #96c859;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-facebook-f i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-facebook-f span {
+    color: #3b5998;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-twitter i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-twitter span {
+    color: #1da1f2;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-linkedin-in i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-linkedin-in span {
+    color: #0077b5;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-pinterest-p i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-pinterest-p span {
+    color: #bd081c;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-reddit i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-reddit span {
+    color: #ff4500;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-tumblr i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-tumblr span {
+    color: #35465c;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-digg i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-digg span {
+    color: #005be2;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-xing i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-xing span {
+    color: #026466;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-stumbleupon i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-stumbleupon span {
+    color: #eb4924;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-vk i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-vk span {
+    color: #45668e;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-odnoklassniki i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-odnoklassniki span {
+    color: #f4731c;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-get-pocket i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-get-pocket span {
+    color: #ef3f56;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-skype i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-skype span {
+    color: #00aff0;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-whatsapp i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-whatsapp span {
+    color: #25d366;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-telegram i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-telegram span {
+    color: #2ca5e0;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-delicious i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-delicious span {
+    color: #3399ff;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-envelope i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-envelope span {
+    color: #c13B2c;
+    background-color: transparent;
+}
+
+.crt-sharing-official.crt-sharing-icon-tr .crt-sharing-print i,
+.crt-sharing-official.crt-sharing-label-tr .crt-sharing-print span {
+    color: #96c859;
+    background-color: transparent;
+}
+

@@ -1,0 +1,72 @@
+.crt-countdown-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.crt-countdown-item {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.crt-countdown-item:first-child {
+    margin-left: 0 !important;
+}
+
+.crt-countdown-item:last-of-type {
+    margin-right: 0 !important;
+}
+
+.crt-countdown-number {
+    display: block;
+}
+
+.crt-countdown-separator {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.crt-countdown-separator span {
+    display: block;
+}
+
+.crt-countdown-separator:last-of-type {
+    display: none !important;
+}
+
+.crt-countdown-wrap+div:not(.crt-countdown-message) {
+    display: none;
+}
+
+.crt-countdown-message+div {
+    display: none;
+}
+
+
+/* Defaults */
+
+.elementor-widget-crt-countdown .crt-countdown-item {
+    background-color: #605BE5;
+}
+
+.elementor-widget-crt-countdown .crt-countdown-number {
+    font-size: 70px;
+}
+
+.elementor-widget-crt-countdown .crt-countdown-label {
+    font-size: 19px;
+    line-height: 45px;
+}
+

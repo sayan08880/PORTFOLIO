@@ -1,0 +1,596 @@
+/*!
+Theme Name: Egan Portfolio Resume
+Theme URI: https://crthemes.com/theme/egan-portfolio-resume-wordpress-theme
+Author: Mien Le
+Author URI: https://crthemes.com/
+Description: Egan Portfolio Resume is a responsive WordPress personal blog, influencer and newspaper theme for WordPress. The theme’s elegant and minimalistic look makes it an attractive choice for bloggers and writers who aim to have a user-friendly and modern website. It’s created to work well with any sort of niche but has designs particular for: food, lifestyle, fashion, travel, and review websites. The theme is fast and fully search engine optimized (SEO friendly). Check the theme documentation and detail at: https://crthemes.com/theme/egan-portfolio-resume-wordpress-theme
+Version: 1.0.5
+Requires at least: 5.0
+Requires PHP: 5.6
+Tested up to: 6.3
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: egan-portfolio-resume
+Tags: custom-background, custom-logo, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready, theme-options, footer-widgets, full-width-template, left-sidebar, right-sidebar, e-commerce, news, blog
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+    display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+/*comments section====*/
+#comments.comments-area {
+    margin-block: 20px;
+}
+
+#comments.comments-area .comments-title {
+    font-size: var(--font-size-lg);
+    font-family: var(--font-main);
+    line-height: 1.2;
+}
+
+#comments.comments-area .comment-list .comment .comment-author img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+}
+
+#comments.comments-area .comment-list .comment .comment-content p {
+    margin-bottom: 5px;
+}
+
+#comments.comments-area div#respond {
+    margin-top: 20px;
+    color: var(--color-text-main);
+}
+
+#comments.comments-area div#respond #reply-title {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#comments.comments-area div#respond p {
+    margin-bottom: 10px;
+}
+
+#comments.comments-area div#respond label {
+    font-weight: normal;
+}
+
+#comments.comments-area div#respond textarea, #comments.comments-area div#respond input:not([type="submit"],[type="checkbox"]) {
+    padding: 5px 10px;
+    width: 100%;
+    background: transparent;
+    color: var(--color-text-main);
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#comments.comments-area div#respond p.comment-form-url,
+#comments.comments-area div#respond p.comment-form-email,
+#comments.comments-area div#respond p.comment-form-author {
+    display: inline-block;
+    width: 100%;
+}
+
+#comments.comments-area div#respond p.comment-form-url label,
+#comments.comments-area div#respond p.comment-form-email label,
+#comments.comments-area div#respond p.comment-form-author label {
+    display: block;
+}
+
+#comments.comments-area div#respond p.comment-form-url input,
+#comments.comments-area div#respond p.comment-form-email input,
+#comments.comments-area div#respond p.comment-form-author input {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+#comments.comments-area div#respond p.comment-form-cookies-consent label {
+    margin-left: 8px;
+    position: relative;
+    top: -1px;
+}
+
+#comments.comments-area div#respond input[type="submit"] {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#comments.comments-area div#respond #reply-title small a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.comment div#respond,
+.comment-content {
+    margin-left: 70px;
+}
+@media only screen and (max-width: 482px) {
+    .comment div#respond,
+    .comment-content {
+        margin-left: 30px;
+    }
+}
+
+.comment-content a {
+    word-wrap: break-word;
+}
+
+
+/**
+ * Comment Lists
+ */
+.comments-area [type="checkbox"],
+.comments-area [type="radio"] {
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+
+.comment-list {
+    padding-left: 0;
+    list-style: none;
+    margin-left: 0;
+}
+
+.comment-list ol {
+    margin-left: 0;
+}
+
+.comment-list > li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.comment-list .children {
+    list-style: none;
+    padding-left: 0;
+}
+
+.comment-list .children > li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 482px) {
+    .comment-list .depth-2,
+    .comment-list .depth-3 {
+        padding-left: calc(4 * 20px);
+    }
+}
+
+/**
+ * Comment Meta
+ */
+.comment-meta .comment-author {
+    margin-bottom: calc(0.25 *20px);
+}
+
+@media only screen and (min-width: 482px) {
+    .comment-meta .comment-author {
+        margin-bottom: 0;
+        padding-right: 0;
+    }
+}
+
+.comment-meta .comment-author .fn {
+    font-weight: normal;
+    hyphens: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.comment-meta .comment-metadata {
+    color: var(--color-text-main);
+    padding: 8px 0 9px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-meta .comment-metadata .edit-link {
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 482px) {
+    .comment-meta {
+        margin-right: inherit;
+    }
+    .comment-meta .comment-author {
+        max-width: inherit;
+    }
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.says {
+    display: none;
+}
+
+.comment-meta {
+    margin-bottom: 10px;
+}
+
+.comment-body {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    color: var(--color-text-main);
+}
+
+.comment-body .reply {
+    margin: 0;
+    margin-left: 70px;
+}
+.comment-body .reply a {
+    color: var(--color-entry-author);
+    font-weight: 500;
+}
+.reply {
+    display: flex;
+    align-items: center;
+}
+.comment-content {
+    word-wrap: break-word;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#submit {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #FFF;
+    border: none;
+}

@@ -1,0 +1,192 @@
+/*!
+ * CRT Link Animations
+ * Version: 1.0
+ * Author: WP Royal
+ * Author URL: https://crthemes.com/
+
+ * CRT Animations Copyright WP Royal 2020.
+ */
+
+.crt-pointer-item {
+	position: relative;
+}
+
+.crt-pointer-double-line .crt-pointer-item:before,
+.crt-pointer-double-line .crt-pointer-item:after,
+.crt-pointer-underline .crt-pointer-item:after,
+.crt-pointer-overline .crt-pointer-item:before {
+	content: '';
+	display: block;
+	height: 0px;
+	width: 100%;
+	left: 0;
+	background-color: #55595c;
+	z-index: 2;
+}
+
+
+.crt-pointer-fx-none .crt-pointer-item:before,
+.crt-pointer-fx-none .crt-pointer-item:after {
+	opacity: 0;
+	-webkit-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+.crt-pointer-fx-none .crt-pointer-item:hover:before,
+.crt-pointer-fx-none .crt-pointer-item:hover:after {
+	opacity: 1;
+}
+
+.crt-pointer-fx-fade .crt-pointer-item:before,
+.crt-pointer-line-fx.crt-pointer-fx-fade .crt-pointer-item:after,
+.crt-pointer-line-fx.crt-pointer-fx-grow .crt-pointer-item:before,
+.crt-pointer-line-fx.crt-pointer-fx-grow .crt-pointer-item:after,
+.crt-pointer-line-fx.crt-pointer-fx-drop .crt-pointer-item:before,
+.crt-pointer-line-fx.crt-pointer-fx-drop .crt-pointer-item:after {
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-fade .crt-pointer-item:hover:before,
+.crt-pointer-line-fx.crt-pointer-fx-fade .crt-pointer-item:hover:after {
+	opacity: 1;
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-slide .crt-pointer-item:before,
+.crt-pointer-line-fx.crt-pointer-fx-slide .crt-pointer-item:after {
+	width: 0;
+	-webkit-transition: all .3s cubic-bezier(.175,.885,.32,1.075);
+	-o-transition: all .3s cubic-bezier(.175,.885,.32,1.075);
+	transition: all .3s cubic-bezier(.175,.885,.32,1.075);
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-slide .crt-pointer-item:hover:before,
+.crt-pointer-line-fx.crt-pointer-fx-slide .crt-pointer-item:hover:after {
+	width: 100%;
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-grow .crt-pointer-item:before,
+.crt-pointer-line-fx.crt-pointer-fx-grow .crt-pointer-item:after {
+	position: absolute;
+	width: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	-webkit-transition: all .3s cubic-bezier(0, 0, 0.16, 0.95);
+	-o-transition: all .3s cubic-bezier(0, 0, 0.16, 0.95);
+	-webkit-transition: all .3s ease(0, 0, 0.16, 0.95);
+	-o-transition: all .3s ease(0, 0, 0.16, 0.95);
+	transition: all .3s ease(0, 0, 0.16, 0.95);
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-grow .crt-pointer-item:hover:before,
+.crt-pointer-line-fx.crt-pointer-fx-grow .crt-pointer-item:hover:after {
+	opacity: 1;
+	width: 100%;
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-drop .crt-pointer-item:before {
+	position: absolute;
+	top: -10px;
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-drop .crt-pointer-item:hover:before {
+	top: 0;
+	opacity: 1;
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-drop .crt-pointer-item:after {
+	position: absolute;
+	bottom: -10px;
+}
+
+.crt-pointer-line-fx.crt-pointer-fx-drop .crt-pointer-item:hover:after {
+	bottom: 0;
+	opacity: 1;
+}
+
+.crt-pointer-border-fx .crt-pointer-item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	border: 2px solid #000;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.crt-pointer-border-fx .crt-pointer-item:hover:before {
+	opacity: 1;
+}
+
+.crt-pointer-border-fx.crt-pointer-fx-grow .crt-pointer-item:before,
+.crt-pointer-background-fx.crt-pointer-fx-grow .crt-pointer-item:before {
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.crt-pointer-border-fx.crt-pointer-fx-shrink .crt-pointer-item:before,
+.crt-pointer-background-fx.crt-pointer-fx-shrink .crt-pointer-item:before {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.crt-pointer-border-fx.crt-pointer-fx-grow .crt-pointer-item:hover:before,
+.crt-pointer-border-fx.crt-pointer-fx-shrink .crt-pointer-item:hover:before,
+.crt-pointer-background-fx.crt-pointer-fx-grow .crt-pointer-item:hover:before,
+.crt-pointer-background-fx.crt-pointer-fx-shrink .crt-pointer-item:hover:before,
+.crt-pointer-background-fx.crt-pointer-fx-sweep .crt-pointer-item:hover:before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.crt-pointer-background-fx .crt-pointer-item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0;
+	background: #000;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.crt-pointer-background-fx .crt-pointer-item:hover:before {
+	opacity: 1;
+}
+
+.crt-pointer-background-fx.crt-pointer-fx-sweep .crt-pointer-item:before {
+	-webkit-transform: translateY(-12%);
+	    -ms-transform: translateY(-12%);
+	        transform: translateY(-12%);
+}
+
+.crt-pointer-background-fx.crt-pointer-fx-skew .crt-pointer-item:before {
+	-webkit-transform: perspective(600px) rotateX(90deg);
+	transform: perspective(600px) rotateX(90deg);
+	-webkit-transform-origin: center bottom 0;
+	-ms-transform-origin: center bottom 0;
+	    transform-origin: center bottom 0;
+}
+
+.crt-pointer-background-fx.crt-pointer-fx-skew .crt-pointer-item:hover:before {
+	-webkit-transform: perspective(600px) rotateX(0deg);
+	transform: perspective(600px) rotateX(0deg);
+}

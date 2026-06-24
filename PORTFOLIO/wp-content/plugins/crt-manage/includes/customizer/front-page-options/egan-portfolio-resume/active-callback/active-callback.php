@@ -1,0 +1,48 @@
+<?php
+
+// Check if static home page is enabled.
+function crt_manage_is_static_homepage_enabled( $control ) {
+    return ( 'page' === $control->manager->get_setting( 'show_on_front' )->value() );
+}
+function crt_manage_is_hero_v1_section_enabled( $control ) {
+    return ( $control->manager->get_setting( 'crt_manage_enable_hero_section' )->value() );
+}
+function crt_manage_is_latest_section_enabled ($control) {
+    return ( $control->manager->get_setting( 'crt_manage_enable_latest_section' )->value() );
+}
+function crt_manage_heading_sub_enable_active($control) {
+    return $control->manager->get_setting( 'crt_manage_heading_sub_enable' )->value();
+}
+function crt_manage_hero_section_callback($control) {
+    return ( $control->manager->get_setting( 'crt_manage_hero_enable_section' )->value() );
+}
+function crt_manage_resume_section_callback($control) {
+    return ( $control->manager->get_setting( 'crt_manage_resume_enable_section' )->value() );
+}
+function crt_manage_project_section_callback($control) {
+    return ( $control->manager->get_setting( 'crt_manage_project_enable_section' )->value() );
+}
+function crt_manage_service_section_callback($control) {
+    return ( $control->manager->get_setting( 'crt_manage_service_enable_section' )->value() );
+}
+function crt_manage_price_section_callback($control) {
+    return ( $control->manager->get_setting( 'crt_manage_price_enable_section' )->value() );
+}
+function crt_manage_client_section_callback($control) {
+    return ( $control->manager->get_setting( 'crt_manage_client_enable_section' )->value() );
+}
+function crt_manage_contact_section_callback($control) {
+    return ( $control->manager->get_setting( 'crt_manage_contact_enable_section' )->value() );
+}
+function crt_manage_hero_is_layout_left($control) {
+    return ( 'left-img' === $control->manager->get_setting( 'crt_manage_hero_layout' )->value() );
+}
+function crt_manage_hero_is_layout_right($control) {
+    return ( 'right-img' === $control->manager->get_setting( 'crt_manage_hero_layout' )->value() );
+}
+function crt_manage_hero_is_layout_center($control) {
+    return ( 'center-img' === $control->manager->get_setting( 'crt_manage_hero_layout' )->value() );
+}
+
+
+?>
