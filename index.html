@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <link rel="icon" type="image/jpeg" href="logo.png">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <main>
+    <header class="header">
+      <a href="admin.html" class="logo" data-site-logo>SAYAN</a>
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="active">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="project.html">PROJECTS</a>
+        <a href="skill.html">SKILLS</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="home-contant">
+        <h1 id="homeGreeting">Hi, I'm Sayan</h1><br><br>
+        <h3 id="homeTitle">TECHNICAL EXPLORER</h3>
+        <p id="homeTagline">TURNING IDEAS INTO FAST, CLEAN, AND FUNCTIONAL WEB APPLICATIONS WITH REAL-WORLD IMPACT</p><br><br>
+        <div class="btn-box">
+          <button id="homeButton" class="modern-btn">
+            <span id="homeButtonText">VIEW DETAILS</span>
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="img">
+        <img id="siteProfileImage" src="sayan.jpg" class="profile-hero" alt="Sayan Profile">
+      </div>
+    </section>
+  </main>
+
+  <div class="particles" id="particles"></div>
+  <script src="portfolio-data.js"></script>
+  <script src="portfolio-render.js"></script>
+</body>
+</html>
